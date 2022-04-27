@@ -1,0 +1,9 @@
+.upper-class {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    align-items: stretch;
+}
+
+.sidebar {
+}

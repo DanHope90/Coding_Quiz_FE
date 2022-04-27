@@ -1,17 +1,5 @@
-body {
-    overflow: hidden;
-    height: 100vh;
-}
-
-main {
-    overflow-y: auto;
-}
-
-aside {
-    flex: 1 0 10%;
-}
-
-.navbar {
+.app {
+    min-height: 100vh;
     display: flex;
-    height: 100%
+    flex-direction: column;
 }
