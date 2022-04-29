@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the app correctly 1`] = `
+<div
+  className="app"
+>
+  <div
+    className="navbar"
+  >
+    <div
+      className="navbar"
+    >
+      <ul
+        className="navbar-links"
+      >
+        <li
+          className="q-mark-pic"
+        >
+          <img
+            alt="question mark"
+            src="question-mark.jpg"
+          />
+        </li>
+        <li
+          className="navbar-links-item"
+        >
+          <a
+            className="navbar-links-link"
+            href="/"
+            onClick={[Function]}
+          >
+            Home
+          </a>
+        </li>
+        <li
+          className="navbar-links-item"
+        >
+          <a
+            className="navbar-links-link"
+            href="/take-a-quiz"
+            onClick={[Function]}
+          >
+            Take A Quiz
+          </a>
+        </li>
+        <li
+          className="navbar-links-item"
+        >
+          <a
+            className="navbar-links-link"
+            href="/saved-quizzes"
+            onClick={[Function]}
+          >
+            Saved Quizzes
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="upper-class"
+  >
+    <div
+      className="sidebar"
+    >
+      <div
+        className="sidebar"
+      >
+        <ul
+          className="sidebar-links"
+        >
+          <li
+            className="sidebar-links-item"
+          >
+            <a
+              className="sidebar-links-link"
+              href="/"
+              onClick={[Function]}
+            >
+              Sidbar Item 1
+            </a>
+          </li>
+          <li
+            className="sidebar-links-item"
+          >
+            <a
+              className="sidebar-links-link"
+              href="/"
+              onClick={[Function]}
+            >
+              Sidebar Item 2
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <div>
+        This is my home page!
+      </div>
+    </div>
+  </div>
+</div>
+`;

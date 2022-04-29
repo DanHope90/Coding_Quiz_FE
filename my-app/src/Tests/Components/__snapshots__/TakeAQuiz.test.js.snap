@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the TakeAQuiz component correctly 1`] = `
+<div>
+  This is the Take A Quiz Page
+</div>
+`;
