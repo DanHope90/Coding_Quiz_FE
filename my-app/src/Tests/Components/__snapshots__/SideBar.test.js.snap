@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the SideBar correctly 1`] = `
+<div
+  className="sidebar"
+>
+  <ul
+    className="sidebar-links"
+  >
+    <li
+      className="sidebar-links-item"
+    >
+      <a
+        className="sidebar-links-link"
+        href="/"
+        onClick={[Function]}
+      >
+        Sidbar Item 1
+      </a>
+    </li>
+    <li
+      className="sidebar-links-item"
+    >
+      <a
+        className="sidebar-links-link"
+        href="/"
+        onClick={[Function]}
+      >
+        Sidebar Item 2
+      </a>
+    </li>
+  </ul>
+</div>
+`;

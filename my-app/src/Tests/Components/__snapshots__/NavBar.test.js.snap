@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the NavBar correctly 1`] = `
+<div
+  className="navbar"
+>
+  <ul
+    className="navbar-links"
+  >
+    <li
+      className="q-mark-pic"
+    >
+      <img
+        alt="question mark"
+        src="question-mark.jpg"
+      />
+    </li>
+    <li
+      className="navbar-links-item"
+    >
+      <a
+        className="navbar-links-link"
+        href="/"
+        onClick={[Function]}
+      >
+        Home
+      </a>
+    </li>
+    <li
+      className="navbar-links-item"
+    >
+      <a
+        className="navbar-links-link"
+        href="/take-a-quiz"
+        onClick={[Function]}
+      >
+        Take A Quiz
+      </a>
+    </li>
+    <li
+      className="navbar-links-item"
+    >
+      <a
+        className="navbar-links-link"
+        href="/saved-quizzes"
+        onClick={[Function]}
+      >
+        Saved Quizzes
+      </a>
+    </li>
+  </ul>
+</div>
+`;
