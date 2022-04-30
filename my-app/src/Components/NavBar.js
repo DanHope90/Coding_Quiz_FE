@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../Styles/NavBar.css";
-import questionmark from "../images/question-mark.jpg";
+import questionmark from "../Images/question-mark.jpg";
 
 function NavBar() {
   return (

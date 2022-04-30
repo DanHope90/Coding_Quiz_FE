@@ -1,0 +1,40 @@
+{
+    "quizzes": [
+        {
+            "quizName": "JavaScript",
+            "quizScore": 6
+        },
+        {
+            "quizName": "CSS",
+            "quizScore": 4
+        },
+        {
+            "quizName": "HTML",
+            "quizScore": 6
+        },
+        {
+            "quizName": "Python",
+            "quizScore": 9
+        },
+        {
+            "quizName": "React",
+            "quizScore": 2
+        },
+        {
+            "quizName": "Ruby",
+            "quizScore": 3
+        },
+        {
+            "quizName": "R",
+            "quizScore": 10
+        },
+        {
+            "quizName": "C#",
+            "quizScore": 1
+        },
+        {
+            "quizName": "C++",
+            "quizScore": 2
+        }
+    ]
+}

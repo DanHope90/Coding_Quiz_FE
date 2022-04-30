@@ -1,7 +1,101 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders the SavedQuizzes component correctly 1`] = `
-<div>
-  This is the Saved Quizzes Page
-</div>
+Array [
+  <div>
+    This is the Saved Quizzes Page
+  </div>,
+  <div>
+    <div>
+      <div>
+        JavaScript
+      </div>
+      <div>
+        6
+         
+        / 10
+      </div>
+    </div>
+    <div>
+      <div>
+        CSS
+      </div>
+      <div>
+        4
+         
+        / 10
+      </div>
+    </div>
+    <div>
+      <div>
+        HTML
+      </div>
+      <div>
+        6
+         
+        / 10
+      </div>
+    </div>
+    <div>
+      <div>
+        Python
+      </div>
+      <div>
+        9
+         
+        / 10
+      </div>
+    </div>
+    <div>
+      <div>
+        React
+      </div>
+      <div>
+        2
+         
+        / 10
+      </div>
+    </div>
+    <div>
+      <div>
+        Ruby
+      </div>
+      <div>
+        3
+         
+        / 10
+      </div>
+    </div>
+    <div>
+      <div>
+        R
+      </div>
+      <div>
+        10
+         
+        / 10
+      </div>
+    </div>
+    <div>
+      <div>
+        C#
+      </div>
+      <div>
+        1
+         
+        / 10
+      </div>
+    </div>
+    <div>
+      <div>
+        C++
+      </div>
+      <div>
+        2
+         
+        / 10
+      </div>
+    </div>
+  </div>,
+]
 `;
