@@ -5,13 +5,18 @@ Array [
   <div>
     This is the Take A Quiz Page
   </div>,
-  <div>
-    <div>
+  <div
+    className="quiz-array"
+  >
+    <div
+      className="indiv.quiz"
+    >
       <div>
         <form
           action="https://en.wikipedia.org/wiki/JavaScript"
         >
           <button
+            className="button"
             type="submit"
           >
             JavaScript
@@ -19,12 +24,15 @@ Array [
         </form>
       </div>
     </div>
-    <div>
+    <div
+      className="indiv.quiz"
+    >
       <div>
         <form
           action="https://en.wikipedia.org/wiki/CSS"
         >
           <button
+            className="button"
             type="submit"
           >
             CSS
@@ -32,12 +40,15 @@ Array [
         </form>
       </div>
     </div>
-    <div>
+    <div
+      className="indiv.quiz"
+    >
       <div>
         <form
           action="https://en.wikipedia.org/wiki/HTML"
         >
           <button
+            className="button"
             type="submit"
           >
             HTML
@@ -45,12 +56,15 @@ Array [
         </form>
       </div>
     </div>
-    <div>
+    <div
+      className="indiv.quiz"
+    >
       <div>
         <form
           action="https://en.wikipedia.org/wiki/Python_(programming_language)"
         >
           <button
+            className="button"
             type="submit"
           >
             Python
@@ -58,12 +72,15 @@ Array [
         </form>
       </div>
     </div>
-    <div>
+    <div
+      className="indiv.quiz"
+    >
       <div>
         <form
           action="https://en.wikipedia.org/wiki/React_(JavaScript_library)"
         >
           <button
+            className="button"
             type="submit"
           >
             React
@@ -71,12 +88,15 @@ Array [
         </form>
       </div>
     </div>
-    <div>
+    <div
+      className="indiv.quiz"
+    >
       <div>
         <form
           action="https://en.wikipedia.org/wiki/Ruby_(programming_language)"
         >
           <button
+            className="button"
             type="submit"
           >
             Ruby
@@ -84,12 +104,15 @@ Array [
         </form>
       </div>
     </div>
-    <div>
+    <div
+      className="indiv.quiz"
+    >
       <div>
         <form
           action="https://en.wikipedia.org/wiki/R_(programming_language)"
         >
           <button
+            className="button"
             type="submit"
           >
             R
@@ -97,12 +120,15 @@ Array [
         </form>
       </div>
     </div>
-    <div>
+    <div
+      className="indiv.quiz"
+    >
       <div>
         <form
           action="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
         >
           <button
+            className="button"
             type="submit"
           >
             C#
@@ -110,12 +136,15 @@ Array [
         </form>
       </div>
     </div>
-    <div>
+    <div
+      className="indiv.quiz"
+    >
       <div>
         <form
           action="https://en.wikipedia.org/wiki/C%2B%2B"
         >
           <button
+            className="button"
             type="submit"
           >
             C++

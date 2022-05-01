@@ -5,8 +5,12 @@ Array [
   <div>
     This is the Saved Quizzes Page
   </div>,
-  <div>
-    <div>
+  <div
+    className="saved-quizzes"
+  >
+    <div
+      className="indiv-quiz"
+    >
       <div>
         JavaScript
       </div>
@@ -16,7 +20,9 @@ Array [
         / 10
       </div>
     </div>
-    <div>
+    <div
+      className="indiv-quiz"
+    >
       <div>
         CSS
       </div>
@@ -26,7 +32,9 @@ Array [
         / 10
       </div>
     </div>
-    <div>
+    <div
+      className="indiv-quiz"
+    >
       <div>
         HTML
       </div>
@@ -36,7 +44,9 @@ Array [
         / 10
       </div>
     </div>
-    <div>
+    <div
+      className="indiv-quiz"
+    >
       <div>
         Python
       </div>
@@ -46,7 +56,9 @@ Array [
         / 10
       </div>
     </div>
-    <div>
+    <div
+      className="indiv-quiz"
+    >
       <div>
         React
       </div>
@@ -56,7 +68,9 @@ Array [
         / 10
       </div>
     </div>
-    <div>
+    <div
+      className="indiv-quiz"
+    >
       <div>
         Ruby
       </div>
@@ -66,7 +80,9 @@ Array [
         / 10
       </div>
     </div>
-    <div>
+    <div
+      className="indiv-quiz"
+    >
       <div>
         R
       </div>
@@ -76,7 +92,9 @@ Array [
         / 10
       </div>
     </div>
-    <div>
+    <div
+      className="indiv-quiz"
+    >
       <div>
         C#
       </div>
@@ -86,7 +104,9 @@ Array [
         / 10
       </div>
     </div>
-    <div>
+    <div
+      className="indiv-quiz"
+    >
       <div>
         C++
       </div>

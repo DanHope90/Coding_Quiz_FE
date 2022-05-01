@@ -1,0 +1,11 @@
+.quiz-array{
+    display: flex;
+    flex-flow: wrap;
+    text-align: center;
+}
+
+.indiv-quiz{
+    border: 2px solid black;
+    padding: 200x;
+    margin: 10px;
+}

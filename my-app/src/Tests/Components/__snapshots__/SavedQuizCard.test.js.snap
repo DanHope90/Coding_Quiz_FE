@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the SavedQuizCard component correctly 1`] = `
+Array [
+  <div />,
+  <div>
+     
+    / 10
+  </div>,
+]
+`;

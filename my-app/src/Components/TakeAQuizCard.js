@@ -1,11 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "../Styles/TakeAQuizCard.css";
 
 function TakeAQuizCard({ quizName, quizURL }) {
   return (
     <div>
       <form action={`${quizURL}`}>
-        <button type="submit">
+        <button type="submit" className="button">
           {quizName}
         </button>
       </form>
