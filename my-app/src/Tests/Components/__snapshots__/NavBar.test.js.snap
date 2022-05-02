@@ -48,6 +48,17 @@ exports[`renders the NavBar correctly 1`] = `
         Saved Quizzes
       </a>
     </li>
+    <li
+      className="navbar-links-item"
+    >
+      <a
+        className="navbar-links-link"
+        href="/test-quiz"
+        onClick={[Function]}
+      >
+        Test Quiz on JavaScript
+      </a>
+    </li>
   </ul>
 </div>
 `;
