@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the Home component correctly 1`] = `
+Array [
+  <div>
+    <h1>
+      Register
+    </h1>
+    <h2>
+      Please create an account
+    </h2>
+  </div>,
+  <div>
+    <form
+      onSubmit={[Function]}
+    >
+      <input
+        className="form-control"
+        id="userName"
+        name="userName"
+        onChange={[Function]}
+        placeholder="Enter username"
+        type="text"
+        value=""
+      />
+      <input
+        className="form-control"
+        id="email"
+        name="email"
+        onChange={[Function]}
+        placeholder="Enter email address"
+        type="email"
+        value=""
+      />
+      <input
+        className="form-control"
+        id="password"
+        name="password"
+        onChange={[Function]}
+        placeholder="Enter password"
+        type="password"
+        value=""
+      />
+      <input
+        className="form-control"
+        id="password2"
+        name="password2"
+        onChange={[Function]}
+        placeholder="Confirm password"
+        type="password"
+        value=""
+      />
+      <button
+        className="button"
+        type="submit"
+      >
+        Submit
+      </button>
+    </form>
+  </div>,
+]
+`;

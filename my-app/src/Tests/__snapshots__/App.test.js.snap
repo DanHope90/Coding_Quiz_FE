@@ -74,10 +74,10 @@ exports[`renders the app correctly 1`] = `
           >
             <a
               className="sidebar-links-link"
-              href="/"
+              href="/register"
               onClick={[Function]}
             >
-              Sidbar Item 1
+              Register
             </a>
           </li>
           <li
@@ -85,10 +85,10 @@ exports[`renders the app correctly 1`] = `
           >
             <a
               className="sidebar-links-link"
-              href="/"
+              href="/login"
               onClick={[Function]}
             >
-              Sidebar Item 2
+              Login
             </a>
           </li>
         </ul>
