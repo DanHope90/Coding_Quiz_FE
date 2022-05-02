@@ -1,0 +1,132 @@
+{
+    "question_1": "What is the symbol for strict equality?",
+    "answers_1": {
+        "a": "&&",
+        "b": "?",
+        "c": "===",
+        "d": "/"
+    },
+    "correct_answers_1":{
+        "a": false,
+        "b": false,
+        "c": true,
+        "d": false
+    },
+    "question_2": "What is the symbol for strict equality?",
+    "answers_2": {
+        "a": "&&",
+        "b": "?",
+        "c": "===",
+        "d": "/"
+    },
+    "correct_answers_2":{
+        "a": false,
+        "b": false,
+        "c": true,
+        "d": false
+    },
+    "question_3": "What is the symbol for strict equality?",
+    "answers_3": {
+        "a": "&&",
+        "b": "?",
+        "c": "===",
+        "d": "/"
+    },
+    "correct_answers_3":{
+        "a": false,
+        "b": false,
+        "c": true,
+        "d": false
+    },
+    "question_4": "What is the symbol for strict equality?",
+    "answers_4": {
+        "a": "&&",
+        "b": "?",
+        "c": "===",
+        "d": "/"
+    },
+    "correct_answers_4":{
+        "a": false,
+        "b": false,
+        "c": true,
+        "d": false
+    },
+    "question_5": "What is the symbol for strict equality?",
+    "answers_5": {
+        "a": "&&",
+        "b": "?",
+        "c": "===",
+        "d": "/"
+    },
+    "correct_answers_5":{
+        "a": false,
+        "b": false,
+        "c": true,
+        "d": false
+    },
+    "question_6": "What is the symbol for strict equality?",
+    "answers_6": {
+        "a": "&&",
+        "b": "?",
+        "c": "===",
+        "d": "/"
+    },
+    "correct_answers_6":{
+        "a": false,
+        "b": false,
+        "c": true,
+        "d": false
+    },
+    "question_7": "What is the symbol for strict equality?",
+    "answers_7": {
+        "a": "&&",
+        "b": "?",
+        "c": "===",
+        "d": "/"
+    },
+    "correct_answers_7":{
+        "a": false,
+        "b": false,
+        "c": true,
+        "d": false
+    },
+    "question_8": "What is the symbol for strict equality?",
+    "answers_8": {
+        "a": "&&",
+        "b": "?",
+        "c": "===",
+        "d": "/"
+    },
+    "correct_answers_8":{
+        "a": false,
+        "b": false,
+        "c": true,
+        "d": false
+    },
+    "question_9": "What is the symbol for strict equality?",
+    "answers_9": {
+        "a": "&&",
+        "b": "?",
+        "c": "===",
+        "d": "/"
+    },
+    "correct_answers_9":{
+        "a": false,
+        "b": false,
+        "c": true,
+        "d": false
+    },
+    "question_10": "What is the symbol for strict equality?",
+    "answers_10": {
+        "a": "&&",
+        "b": "?",
+        "c": "===",
+        "d": "/"
+    },
+    "correct_answers_10":{
+        "a": false,
+        "b": false,
+        "c": true,
+        "d": false
+    }
+}

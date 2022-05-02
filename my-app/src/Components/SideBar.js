@@ -7,10 +7,10 @@ function SideBar() {
     <div className="sidebar">
       <ul className="sidebar-links">
         <li className="sidebar-links-item">
-          <Link className="sidebar-links-link" to="/">Sidbar Item 1</Link>
+          <Link className="sidebar-links-link" to="/register">Register</Link>
         </li>
         <li className="sidebar-links-item">
-          <Link className="sidebar-links-link" to="/">Sidebar Item 2</Link>
+          <Link className="sidebar-links-link" to="/login">Login</Link>
         </li>
       </ul>
     </div>

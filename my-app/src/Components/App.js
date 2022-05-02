@@ -6,6 +6,8 @@ import Layout from "./Layout";
 import Home from "./Home";
 import TakeAQuiz from "./TakeAQuiz";
 import SavedQuizzes from "./SavedQuizzes";
+import Register from "./Register";
+import Login from "./Login";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/take-a-quiz" element={<TakeAQuiz />} />
             <Route path="/saved-quizzes" element={<SavedQuizzes />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/login" element={<Login />} />
           </Routes>
         </Layout>
       </Router>
