@@ -8,6 +8,7 @@ import TakeAQuiz from "./TakeAQuiz";
 import SavedQuizzes from "./SavedQuizzes";
 import Register from "./Register";
 import Login from "./Login";
+import TestQuiz from "./TestQuiz";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="/saved-quizzes" element={<SavedQuizzes />} />
             <Route path="/register" element={<Register />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/test-quiz" element={<TestQuiz />} />
           </Routes>
         </Layout>
       </Router>
