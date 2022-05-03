@@ -1,58 +1,49 @@
-[
+{
+    "quiz": "JavaScript",
+    "questions": [{
+      "question": "What is the symbol for multiplication?",
+      "answers": [
+        {"answer": "*", "isCorrect": true},
+        {"answer": "/", "isCorrect": false},
+        {"answer": "-", "isCorrect": false},
+        {"answer": "+", "isCorrect": false}
+      ]
+    },
     {
-        "question": "What is the symbol for strict equality?",
-            "answers": {
-                "a": "&&",
-                "b": "?",
-                "c": "===",
-                "d": "/"
-            },
-            "correct_answers": {
-                "a": false,
-                "b": false,
-                "c": true,
-                "d": false
-            }},
-        {
-            "question": "How do we console.log the first element of an array?",
-            "answers": {
-                "a": "console.log(myArray[0]);",
-                "b": "console.log(myArray[1]);",
-                "c": "console.log(myArray[first]);",
-                "d": "console.log(myArray);"
-                },
-            "correct_answers": {
-                "a": true,
-                "b": false,
-                "c": false,
-                "d": false
-                }},
-        {
-            "question": "What is the symbol for multiplication?",
-            "answers": {
-                "a": "/",
-                "b": "*",
-                "c": "+",
-                "d": "-"
-                },
-            "correct_answers": {
-                "a": false,
-                "b": true,
-                "c": false,
-                "d": false
-                }},
-        {
-            "question": "How do we turn the number 123 into a string?",
-            "answers": {
-                "a": "(123).toString()",
-                "b": "Its not possible",
-                "c": "(123).makeMeIntoAString()",
-                "d": "None of the above"
-                },
-            "correct_answers": {
-                "a": true,
-                "b": false,
-                "c": false,
-                "d": false
-                }}
-]
+      "question": "How do we console.log the first element of an array?",
+      "answers": [
+        {"answer": "console.log(myArray[1])", "isCorrect": false},
+        {"answer": "console.log(myArray[0])", "isCorrect": true},
+        {"answer": "console.log(myArray[1])", "isCorrect": false},
+        {"answer": "console.log(myArray[1])", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "What makes JavaScript good for web development?",
+      "answers": [
+        {"answer": "It has a funny name", "isCorrect": false},
+        {"answer": "It has a funny name", "isCorrect": false},
+        {"answer": "It can be executed in a web browser", "isCorrect": true},
+        {"answer": "It has a funny name", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "How do we turn the number 123 into a string?",
+      "answers": [
+        {"answer": "(123).toString()", "isCorrect": true},
+        {"answer": "(123).makeMeIntoAString()", "isCorrect": false},
+        {"answer": "(123).makeMeIntoAString()", "isCorrect": false},
+        {"answer": "(123).makeMeIntoAString()", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "What is the symbol for strict equality?",
+      "answers": [
+        {"answer": "!==", "isCorrect": false},
+        {"answer": "!===", "isCorrect": false},
+        {"answer": "==", "isCorrect": false},
+        {"answer": "===", "isCorrect": true}
+      ]
+    }
+  ]
+  }
