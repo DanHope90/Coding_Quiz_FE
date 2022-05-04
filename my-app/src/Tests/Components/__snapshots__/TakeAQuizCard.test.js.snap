@@ -2,16 +2,13 @@
 
 exports[`renders the TakeAQuizCard component correctly 1`] = `
 <div>
-  <form
-    action="undefined"
+  <button
+    className="button-quiz"
+    onClick={[Function]}
+    type="submit"
   >
-    <button
-      className="button-quiz"
-      type="submit"
-    >
-      <div />
-      <div />
-    </button>
-  </form>
+    <div />
+    <div />
+  </button>
 </div>
 `;
