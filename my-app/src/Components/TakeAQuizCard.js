@@ -6,7 +6,7 @@ function TakeAQuizCard({ quizName, quizURL }) {
   return (
     <div>
       <form action={`${quizURL}`}>
-        <button type="submit" className="button">
+        <button type="submit" className="button-quiz">
           {quizName}
         </button>
       </form>

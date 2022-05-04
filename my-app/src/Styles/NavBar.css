@@ -26,6 +26,10 @@
     display: inline-block;
 }
 
+.navbar-links-link:active{
+    color:white;
+}
+
 .q-mark-pic {
     width: 75px;
     height: 75px;

@@ -1,4 +1,4 @@
-.button {
+.button-quiz {
     border-radius: 12px;
     font-size: 12px;
     background-color: beige;
@@ -9,7 +9,12 @@
     text-align: center;
 }
 
-.button:hover {
+.button-quiz:hover {
     background-color: red;
     color: white;
+}
+
+.button-quiz:active {
+    background-color: blueviolet;
+    color: red;
 }
