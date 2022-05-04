@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../Styles/Register.css";
 
 function Login() {
   const [formData, setFormData] = useState({
@@ -21,12 +22,12 @@ function Login() {
 
   return (
     <>
-      <div>
+      <div className="titles">
         <h1>Login</h1>
         <h2>Please submit your username and password</h2>
       </div>
       <div>
-        <form onSubmit={onSubmit}>
+        <form className="form" onSubmit={onSubmit}>
           <input type="email" className="form-control" id="email" name="email" value={email} placeholder="Enter email address" onChange={onChange} />
           <input type="password" className="form-control" id="password" name="password" value={password} placeholder="Enter password" onChange={onChange} />
           <button type="submit" className="button">Submit</button>

@@ -2,6 +2,7 @@
     display:flex;
     justify-content: center;
     flex-direction: column;
+    padding-left: 40px;
 }
 
 .form {
@@ -9,6 +10,7 @@
     justify-content: center;
     flex-direction: column;
     gap: 20px;
+    padding-left: 40px;
 }
 
 .button {
