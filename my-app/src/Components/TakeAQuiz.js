@@ -14,7 +14,7 @@ function TakeAQuiz(quizId) {
   const [alert, setAlert] = useState(initialState.alert);
 
   // Below employs an empty array to store all quizzes, useEffect makes an axios request
-  // to populate said array with all quizzes. This may not be needed later.
+  // to populate said array with all quizzes.
   const [availableQuizzes, setAvailableQuizzes] = useState([]);
 
   useEffect(() => {
@@ -42,13 +42,30 @@ function TakeAQuiz(quizId) {
 
   console.log(desiredQuiz);
 
+  // Below sets our quizURL. This may have to go away at some point,
+  // it may be superfluous and more or less non-functional.
+
+  const [quizURL, setQuizURL] = useState("");
+
+  useEffect(() => {
+    axios
+      .get(`http://localhost:4000/api/quizzes/${quizId}`)
+      .then(() => setQuizURL(`http://localhost:4000/api/quizzes/${quizId}`))
+      .catch(() => setAlert({ message: "Axios promise rejected", isSuccess: false }));
+  });
+
   return (
     <>
       <div>This is the Take A Quiz Page</div>
       <div className="quiz-array">
         {availableQuizzes.map((quiz) => (
-          <div key={quiz.quizName} className="indiv.quiz">
-            <TakeAQuizCard quizName={quiz.quizName} quizURL={quiz.quizURL} />
+          <div key={quiz.id} className="indiv.quiz">
+            <TakeAQuizCard
+              quizName={quiz.quizName}
+              description={quiz.description}
+              quidId={quiz.id}
+              quizURL={quizURL}
+            />
           </div>
         ))}
       </div>

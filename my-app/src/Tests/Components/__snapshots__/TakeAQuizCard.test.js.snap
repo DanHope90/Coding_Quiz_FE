@@ -8,7 +8,10 @@ exports[`renders the TakeAQuizCard component correctly 1`] = `
     <button
       className="button-quiz"
       type="submit"
-    />
+    >
+      <div />
+      <div />
+    </button>
   </form>
 </div>
 `;
