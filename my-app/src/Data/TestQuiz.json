@@ -3,10 +3,10 @@
     "questions": [{
       "question": "What is the symbol for multiplication?",
       "answers": [
-        {"answer": "*", "isCorrect": true},
-        {"answer": "/", "isCorrect": false},
-        {"answer": "-", "isCorrect": false},
-        {"answer": "+", "isCorrect": false}
+        {"answer_a": "*", "isCorrect": true},
+        {"answer_b": "/", "isCorrect": false},
+        {"answer_c": "-", "isCorrect": false},
+        {"answer_d": "+", "isCorrect": false}
       ]
     },
     {
