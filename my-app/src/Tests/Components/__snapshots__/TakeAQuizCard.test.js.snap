@@ -6,7 +6,7 @@ exports[`renders the TakeAQuizCard component correctly 1`] = `
     action="undefined"
   >
     <button
-      className="button"
+      className="button-quiz"
       type="submit"
     />
   </form>
