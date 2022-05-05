@@ -11,6 +11,21 @@ function QuestionCard(props) {
 
   const [chosenAnswer, setChosenAnswer] = useState("");
 
+  // Below checks if the answer chosen by the user matches the
+  // actual correct answer. If so, increments score by 1,
+  // otherwise keeps it as it is.
+
+  function checkAnswer() {
+    if ((chosenAnswer === question.correct_answer)) {
+      setScore(score + 1);
+    } else if ((chosenAnswer === "")) {
+      setScore(score);
+    } else if ((chosenAnswer !== question.correct_answer)) {
+      setScore(score);
+    }
+  }
+
+  checkAnswer(chosenAnswer);
   console.log(chosenAnswer);
 
   return (
