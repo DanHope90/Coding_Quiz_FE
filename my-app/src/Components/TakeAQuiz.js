@@ -12,6 +12,7 @@ function TakeAQuiz() {
   const [desiredQuiz, setDesiredQuiz] = useState();
 
   const [score, setScore] = useState(0);
+  const [qNumber, setQNumber] = useState(1);
 
   // Below presents a "Loading..." if the database isn't yet
   // accessed. It should only display for a second or two.
@@ -40,7 +41,13 @@ function TakeAQuiz() {
         <div>
           {desiredQuiz.questions.map((question) => (
             <div>
-              <QuestionCard question={question} score={score} setScore={setScore} />
+              <QuestionCard
+                question={question}
+                score={score}
+                setScore={setScore}
+                qNumber={qNumber}
+                setQNumber={setQNumber}
+              />
             </div>
           ))}
         </div>
