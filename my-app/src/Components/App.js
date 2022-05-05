@@ -32,12 +32,6 @@ function App() {
       .catch(() => setAlert({ message: "Axios promise rejected", isSuccess: false }));
   }, []);
 
-  // Below presents a "Loading..." if the database isn't yet
-  // accessed. It should only display for a second or two.
-  if ((availableQuizzes.length === 0)) {
-    return <div>Loading....</div>;
-  }
-
   return (
     <Context.Provider value={{ availableQuizzes }}>
       <div className="app">

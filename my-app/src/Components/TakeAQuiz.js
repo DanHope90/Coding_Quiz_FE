@@ -13,6 +13,12 @@ function TakeAQuiz() {
 
   const [score, setScore] = useState(0);
 
+  // Below presents a "Loading..." if the database isn't yet
+  // accessed. It should only display for a second or two.
+  if ((availableQuizzes.length === 0)) {
+    return <div>Loading....</div>;
+  }
+
   return (
     <div style={{ backgroundColor: "pink" }}>
       <div>This is the Take A Quiz Page</div>
@@ -34,7 +40,7 @@ function TakeAQuiz() {
         <div>
           {desiredQuiz.questions.map((question) => (
             <div>
-              <QuestionCard question={question} setScore={setScore} />
+              <QuestionCard question={question} score={score} setScore={setScore} />
             </div>
           ))}
         </div>
