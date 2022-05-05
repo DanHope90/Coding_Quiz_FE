@@ -1,5 +1,6 @@
+/* eslint-disable react/jsx-no-constructed-context-values */
 import "../Styles/App.css";
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 import NavBar from "./NavBar";
@@ -30,9 +31,13 @@ function App() {
       .then(({ data }) => setAvailableQuizzes(data))
       .catch(() => setAlert({ message: "Axios promise rejected", isSuccess: false }));
   }, []);
+
+  // Below presents a "Loading..." if the database isn't yet
+  // accessed. It should only display for a second or two.
   if ((availableQuizzes.length === 0)) {
     return <div>Loading....</div>;
   }
+
   return (
     <Context.Provider value={{ availableQuizzes }}>
       <div className="app">
