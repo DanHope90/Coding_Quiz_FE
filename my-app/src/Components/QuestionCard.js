@@ -25,6 +25,7 @@ function QuestionCard(props) {
       setQNumber(qNumber + 1);
     } else if ((chosenAnswer === "")) {
       setScore(score);
+      setQNumber(qNumber);
     } else if ((chosenAnswer !== question.correct_answer)) {
       setScore(score);
       setQNumber(qNumber + 1);
@@ -42,13 +43,11 @@ function QuestionCard(props) {
       <div className="answers">
         {/* When the buttons are pressed, they seem to remain pressed until a different one is
         pressed.So the way it is rendering now may allow the user to accrue an infinite score if
-        they wanted.So the question needs to disappear after its been answered to stop the user
+        they wanted. So the question needs to disappear after its been answered to stop the user
         from answering it multiple times.  */}
         <button type="submit" onClick={() => setChosenAnswer(question.answers[0].a)}>{question.answers[0].a}</button>
         <button type="submit" onClick={() => setChosenAnswer(question.answers[1].b)}>{question.answers[1].b}</button>
         <button type="submit" onClick={() => setChosenAnswer(question.answers[2].c)}>{question.answers[2].c}</button>
-        {/* For some reason, when clicking this button the checkAnswer function repeats ad infinitm
-        not sure why at this stage. */}
         <button type="submit" onClick={() => setChosenAnswer(question.answers[3].d)}>{question.answers[3].d}</button>
       </div>
     </div>
