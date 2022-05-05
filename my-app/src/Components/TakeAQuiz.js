@@ -11,8 +11,7 @@ function TakeAQuiz() {
   const { availableQuizzes } = useContext(Context);
   const [desiredQuiz, setDesiredQuiz] = useState();
 
-  console.log("All Quizzes:", availableQuizzes);
-  console.log("My chosen/desired quiz:", desiredQuiz);
+  const [score, setScore] = useState(0);
 
   return (
     <div style={{ backgroundColor: "pink" }}>
@@ -31,10 +30,14 @@ function TakeAQuiz() {
         ))}
       </div>
       <div>
-        {availableQuizzes[2].questions.map((question) => (
-          <div>
-            <QuestionCard question={question} />
-          </div>
+        {(desiredQuiz && (
+        <div>
+          {desiredQuiz.questions.map((question) => (
+            <div>
+              <QuestionCard question={question} setScore={setScore} />
+            </div>
+          ))}
+        </div>
         ))}
       </div>
     </div>
