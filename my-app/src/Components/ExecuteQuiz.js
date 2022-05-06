@@ -8,11 +8,6 @@ function ExecuteQuiz(props) {
   const [score, setScore] = useState(0);
   const [qNumber, setQNumber] = useState(1);
 
-  // Below checks if the answer chosen by the user matches the
-  // actual correct answer. If so, increments score by 1,
-  // otherwise keeps it as it is. Also, the qNumber is increased
-  // by 1 when an answer (correct or not) is selected.
-
   const [chosenAnswer, setChosenAnswer] = useState("");
 
   return (
