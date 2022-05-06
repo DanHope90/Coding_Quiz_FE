@@ -5,19 +5,18 @@ import PropTypes from "prop-types";
 import TakeAQuizCard from "./TakeAQuizCard";
 import "../Styles/TakeAQuiz.css";
 import Context from "../Utils/Context";
-import QuestionCard from "./QuestionCard";
+import ExecuteQuiz from "./ExecuteQuiz";
 
 function TakeAQuiz() {
   const { availableQuizzes } = useContext(Context);
-  const [desiredQuiz, setDesiredQuiz] = useState();
-
-  const [score, setScore] = useState(0);
 
   // Below presents a "Loading..." if the database isn't yet
   // accessed. It should only display for a second or two.
   if ((availableQuizzes.length === 0)) {
     return <div>Loading....</div>;
   }
+
+  const [desiredQuiz, setDesiredQuiz] = useState();
 
   return (
     <div style={{ backgroundColor: "pink" }}>
@@ -36,14 +35,10 @@ function TakeAQuiz() {
         ))}
       </div>
       <div>
+        {/* The ExecuteQuiz component only renders if desiredQuiz evaluates
+        to a truthy; to do that, the user must select a quiz. */}
         {(desiredQuiz && (
-        <div>
-          {desiredQuiz.questions.map((question) => (
-            <div>
-              <QuestionCard question={question} score={score} setScore={setScore} />
-            </div>
-          ))}
-        </div>
+          <div><ExecuteQuiz desiredQuiz={desiredQuiz} /></div>
         ))}
       </div>
     </div>
