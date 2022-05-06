@@ -21,24 +21,35 @@ function TakeAQuiz() {
   return (
     <div style={{ backgroundColor: "pink" }}>
       <div>This is the Take A Quiz Page</div>
-      <div className="quiz-array">
-        {availableQuizzes.map((quiz) => (
-          <div key={quiz._id} className="indiv.quiz">
-            <TakeAQuizCard
-              quizName={quiz.quizName}
-              description={quiz.description}
-              quizId={quiz._id}
-              wholeQuiz={quiz}
-              setDesiredQuiz={setDesiredQuiz}
-            />
+      {/* If a quiz hasn't been selected, the cards will be rendered, but
+      the cards will not be rendered after one has been clicked. */}
+      {(!desiredQuiz && (
+        <>
+          <div>You havent yet selected a quiz.</div>
+          <div className="quiz-array">
+            {availableQuizzes.map((quiz) => (
+              <div key={quiz._id} className="indiv-quiz">
+                <TakeAQuizCard
+                  quizName={quiz.quizName}
+                  description={quiz.description}
+                  quizId={quiz._id}
+                  wholeQuiz={quiz}
+                  setDesiredQuiz={setDesiredQuiz}
+                />
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
+        </>
+      ))}
       <div>
         {/* The ExecuteQuiz component only renders if desiredQuiz evaluates
-        to a truthy; to do that, the user must select a quiz. */}
+        to a truthy; to do that, the user must select a quiz.
+        The select another quiz button will reset the desiredQuiz to be falsy */}
         {(desiredQuiz && (
-          <div><ExecuteQuiz desiredQuiz={desiredQuiz} /></div>
+          <>
+            <div><ExecuteQuiz desiredQuiz={desiredQuiz} /></div>
+            <button type="submit" onClick={() => setDesiredQuiz()}>I want to select another quiz!</button>
+          </>
         ))}
       </div>
     </div>
