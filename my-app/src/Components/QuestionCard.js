@@ -1,18 +1,13 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
 /* eslint-disable no-console */
-import React, { useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import "../Styles/QuestionCard.css";
 
 function QuestionCard(props) {
   const {
-    question, score, setScore, qNumber, setQNumber,
+    question, setChosenAnswer, setScore, setQNumber, score, qNumber, chosenAnswer,
   } = props;
-  console.log("CurrentScore:", score);
-  console.log("CurrentQNumber", qNumber);
-  console.log(question.correct_answer);
-
-  const [chosenAnswer, setChosenAnswer] = useState("");
 
   // Below checks if the answer chosen by the user matches the
   // actual correct answer. If so, increments score by 1,
@@ -23,17 +18,18 @@ function QuestionCard(props) {
     if ((chosenAnswer === question.correct_answer)) {
       setScore(score + 1);
       setQNumber(qNumber + 1);
+      setChosenAnswer("");
     } else if ((chosenAnswer === "")) {
       setScore(score);
       setQNumber(qNumber);
     } else if ((chosenAnswer !== question.correct_answer)) {
       setScore(score);
       setQNumber(qNumber + 1);
+      setChosenAnswer("");
     }
   }
 
   checkAnswer(chosenAnswer);
-  console.log(chosenAnswer);
 
   return (
     <div>
