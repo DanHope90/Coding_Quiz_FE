@@ -16,11 +16,7 @@ function TakeAQuiz() {
     return <div>Loading....</div>;
   }
 
-  // Initially, no quiz is selected and the user's score is 0.
-  // qNumber has to start at 1.
   const [desiredQuiz, setDesiredQuiz] = useState();
-  // const [score, setScore] = useState(0);
-  // const [qNumber, setQNumber] = useState(1);
 
   return (
     <div style={{ backgroundColor: "pink" }}>
@@ -39,6 +35,8 @@ function TakeAQuiz() {
         ))}
       </div>
       <div>
+        {/* The ExecuteQuiz component only renders if desiredQuiz evaluates
+        to a truthy; to do that, the user must select a quiz. */}
         {(desiredQuiz && (
           <div><ExecuteQuiz desiredQuiz={desiredQuiz} /></div>
         ))}
