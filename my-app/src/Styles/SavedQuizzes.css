@@ -1,6 +1,11 @@
+.saved-quiz-body{
+    margin: 25px;
+}
+
 .saved-quizzes{
     display: flex;
     flex-flow: wrap;
+    justify-content: center;
     text-align: center;
 }
 

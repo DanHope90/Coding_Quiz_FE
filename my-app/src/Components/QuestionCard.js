@@ -37,10 +37,10 @@ function QuestionCard(props) {
         {question.question}
       </div>
       <div className="answers">
-        <button type="submit" onClick={() => setChosenAnswer(question.answers[0].a)}>{question.answers[0].a}</button>
-        <button type="submit" onClick={() => setChosenAnswer(question.answers[1].b)}>{question.answers[1].b}</button>
-        <button type="submit" onClick={() => setChosenAnswer(question.answers[2].c)}>{question.answers[2].c}</button>
-        <button type="submit" onClick={() => setChosenAnswer(question.answers[3].d)}>{question.answers[3].d}</button>
+        <div><button type="submit" className="answer-button" onClick={() => setChosenAnswer(question.answers[0].a)}>{question.answers[0].a}</button></div>
+        <div><button type="submit" className="answer-button" onClick={() => setChosenAnswer(question.answers[1].b)}>{question.answers[1].b}</button></div>
+        <div><button type="submit" className="answer-button" onClick={() => setChosenAnswer(question.answers[2].c)}>{question.answers[2].c}</button></div>
+        <div><button type="submit" className="answer-button" onClick={() => setChosenAnswer(question.answers[3].d)}>{question.answers[3].d}</button></div>
       </div>
     </div>
   );

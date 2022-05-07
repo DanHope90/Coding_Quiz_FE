@@ -1,10 +1,29 @@
+.take-a-quiz-body {
+    margin: 25px;
+}
+
 .take-quiz-array{
     display: flex;
     flex-flow: wrap;
+    justify-content: center;
     text-align: center;
 }
 
 .take-indiv-quiz{
-    padding: 200x;
-    margin: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.leave-quiz-button{
+    color: red;
+}
+
+.leave-quiz-button:hover{
+    background-color: red;
+    color: black;
+}
+
+.leave-quiz-button:active{
+    background-color: white;
+    color: red;
 }

@@ -21,7 +21,7 @@ function TakeAQuiz() {
   const [desiredQuiz, setDesiredQuiz] = useState();
 
   return (
-    <div style={{ backgroundColor: "pink" }}>
+    <div className="take-a-quiz-body">
       <div>This is the Take A Quiz Page</div>
       {/* If a quiz hasn't been selected, the cards will be rendered, but
       the cards will not be rendered after one has been clicked. */}
@@ -50,7 +50,7 @@ function TakeAQuiz() {
         {(desiredQuiz && (
           <>
             <div><ExecuteQuiz desiredQuiz={desiredQuiz} /></div>
-            <button type="submit" onClick={() => setDesiredQuiz()}>I want to select another quiz!</button>
+            <button type="submit" className="leave-quiz-button" onClick={() => setDesiredQuiz()}>I want to select another quiz!</button>
           </>
         ))}
       </div>

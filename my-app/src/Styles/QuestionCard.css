@@ -1,4 +1,16 @@
 .answers{
     display: flex;
-    flex-direction: column;
+    flex-flow: wrap;
+    flex-direction: row;
+    padding: 10px;
+    margin: 10px;
+};
+
+.answer-button {
+    color: white;
+    background-color: black;
+};
+
+.answer-button:active {
+    color:red;
 }

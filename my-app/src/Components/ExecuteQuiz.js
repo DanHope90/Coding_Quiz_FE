@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import QuestionCard from "./QuestionCard";
+import "../Styles/ExecuteQuiz.css";
 
 function ExecuteQuiz(props) {
   const { desiredQuiz } = props;
@@ -14,15 +15,15 @@ function ExecuteQuiz(props) {
     <div>
       {(((qNumber + 1) <= desiredQuiz.questions.length) && (
         <>
-          <div>{desiredQuiz.quizName}</div>
-          <div>{desiredQuiz.description}</div>
-          <div>
+          <h1>{desiredQuiz.quizName}</h1>
+          <h2>{desiredQuiz.description}</h2>
+          <div className="question-count">
             Current Question: {qNumber + 1} of {desiredQuiz.questions.length}.
           </div>
-          <div>
+          <div className="question-count">
             Your score: {score} out of {desiredQuiz.questions.length}.
           </div>
-          <div>
+          <div className="question-card">
             <QuestionCard
               score={score}
               setScore={setScore}

@@ -1,0 +1,30 @@
+button {
+    flex-wrap: wrap;
+    border-radius: 12px;
+    color: white;
+    background-color: black;
+}
+
+button:hover{
+    color:black;
+    background-color: white;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+.question-count {
+    font-size: 16px;
+    margin: 10px;
+    color: blue;
+}
+
+.question-card {
+    font-size: 16px;
+}
+
