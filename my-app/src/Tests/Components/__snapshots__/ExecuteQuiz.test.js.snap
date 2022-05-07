@@ -3,12 +3,9 @@
 exports[`renders the ExecuteQuiz component correctly 1`] = `
 <div>
   <div>
-    You have scored
-     
+    You have scored 
     0
-     
-    out of
-     
+     out of 
     0
     !
   </div>

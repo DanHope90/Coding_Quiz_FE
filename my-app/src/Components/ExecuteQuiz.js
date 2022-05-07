@@ -17,24 +17,10 @@ function ExecuteQuiz(props) {
           <div>{desiredQuiz.quizName}</div>
           <div>{desiredQuiz.description}</div>
           <div>
-            Current Question:
-            {' '}
-            {qNumber + 1}
-            {' '}
-            of
-            {' '}
-            {desiredQuiz.questions.length}
-            .
+            Current Question: {qNumber + 1} of {desiredQuiz.questions.length}.
           </div>
           <div>
-            Your score:
-            {' '}
-            {score}
-            {' '}
-            out of
-            {' '}
-            {desiredQuiz.questions.length}
-            .
+            Your score: {score} out of {desiredQuiz.questions.length}.
           </div>
           <div>
             <QuestionCard
@@ -51,14 +37,7 @@ function ExecuteQuiz(props) {
         </>
       )) || (
         <div>
-          You have scored
-          {' '}
-          {score}
-          {' '}
-          out of
-          {' '}
-          {desiredQuiz.questions.length}
-          !
+          You have scored {score} out of {desiredQuiz.questions.length}!
         </div>
       )}
     </div>

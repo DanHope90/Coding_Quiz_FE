@@ -1,11 +1,10 @@
-.quiz-array{
+.take-quiz-array{
     display: flex;
     flex-flow: wrap;
     text-align: center;
 }
 
-.indiv-quiz{
-    border: 2px solid grey;
+.take-indiv-quiz{
     padding: 200x;
     margin: 10px;
 }

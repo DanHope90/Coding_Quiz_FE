@@ -28,9 +28,9 @@ function TakeAQuiz() {
       {(!desiredQuiz && (
         <>
           <div>You havent yet selected a quiz.</div>
-          <div className="quiz-array">
+          <div className="take-quiz-array">
             {availableQuizzes.map((quiz) => (
-              <div key={quiz._id} className="indiv-quiz">
+              <div key={quiz._id} className="take-indiv-quiz">
                 <TakeAQuizCard
                   quizName={quiz.quizName}
                   description={quiz.description}
