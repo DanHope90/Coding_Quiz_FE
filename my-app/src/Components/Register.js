@@ -36,9 +36,9 @@ function Register() {
         });
       })
       .catch(() => {
-        alert({
-          message: "Server error. Please try again.",
-          isSuccess: false,
+        setAlert({
+          message: "User already exists.",
+          isSuccess: true,
         });
       });
   }

@@ -1,39 +1,104 @@
 import React, { useState } from "react";
+import axios from "axios";
+import Alert from "./Alert";
 import "../Styles/Register.css";
 
 function Login() {
-  const [formData, setFormData] = useState({
+  const [loginData, setLoginData] = useState({
     email: "",
     password: "",
   });
 
-  const { email, password } = formData;
+  const { email, password } = loginData;
 
-  function onChange(e) {
-    setFormData((prevState) => ({
+  const alertState = {
+    alert: {
+      message: "",
+      isSuccess: false,
+    },
+  };
+
+  const [alert, setAlert] = useState(alertState.alert);
+
+  const [success, setSuccess] = useState(false);
+
+  const handleSubmit = async (event) => {
+    console.log({ ...loginData });
+    event.preventDefault();
+    setAlert({ message: "", isSuccess: false });
+    axios
+      .post(`http://localhost:4000/api/user/login`, { ...loginData })
+      .then(() => {
+        setAlert({
+          message: "You have successfully logged in!",
+          isSuccess: true,
+        });
+      })
+      .catch((err) => {
+        setAlert({
+          message: "Login failed.",
+          isSuccess: false,
+        });
+      });
+  };
+
+  function loginHandleChange(event) {
+    setLoginData((prevState) => ({
       ...prevState,
-      [e.target.name]: e.target.value,
+      [event.target.name]: event.target.value,
     }));
   }
 
-  function onSubmit(e) {
-    e.preventDefault();
-  }
-
   return (
-    <>
-      <div className="titles">
-        <h1>Login</h1>
-        <h2>Please submit your username and password</h2>
-      </div>
-      <div>
-        <form className="form" onSubmit={onSubmit}>
-          <input type="email" className="form-control" id="email" name="email" value={email} placeholder="Enter email address" onChange={onChange} />
-          <input type="password" className="form-control" id="password" name="password" value={password} placeholder="Enter password" onChange={onChange} />
-          <button type="submit" className="button">Submit</button>
-        </form>
-      </div>
-    </>
+    <div className="titles">
+      {alert.isSuccess && alert.message
+        ? (
+          <Alert
+            message={alert.message}
+            isSuccess={alert.isSuccess}
+          />
+        )
+        : (
+          <div>
+            <Alert message={alert.message} isSuccess={alert.isSuccess} />
+            <h1>Login</h1>
+            <h2>Please submit your username and password</h2>
+            <div>
+              <form className="form" onSubmit={handleSubmit}>
+                <input
+                  type="email"
+                  className="form-control"
+                  id="email"
+                  name="email"
+                  value={email}
+                  placeholder="Enter email address"
+                  onChange={loginHandleChange}
+                  required
+                />
+                <input
+                  type="password"
+                  className="form-control"
+                  id="password"
+                  name="password"
+                  value={password}
+                  placeholder="Enter password"
+                  onChange={loginHandleChange}
+                  required
+                />
+                <div className="userLogin">
+                  <button
+                    type="submit"
+                    className="button"
+                  >
+                    Login
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        )}
+    </div>
+
   );
 }
 
