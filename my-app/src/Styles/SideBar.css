@@ -1,6 +1,7 @@
 .sidebar {
     background-color: grey;
     display: grid;
+    padding-right: 10px;
 }
 
 .sidebar-links {

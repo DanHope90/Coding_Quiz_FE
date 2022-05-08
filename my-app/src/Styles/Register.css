@@ -11,10 +11,19 @@
     flex-direction: column;
     gap: 20px;
     padding-left: 40px;
-    width: 500px;
 }
 
-.button {
+.form-control {
+    width: 400px;
+}
+
+.register-button {
     height: 20px;
     width: 200px;
+    color: white;
+    background-color: black;
+}
+
+.register-button.hover {
+    color: red;
 }

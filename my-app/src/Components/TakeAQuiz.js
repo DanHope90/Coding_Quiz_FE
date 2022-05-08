@@ -12,8 +12,6 @@ function TakeAQuiz() {
 
   // Below presents a "Loading..." if the database isn't yet
   // accessed. It should only display for a second or two.
-  console.log(availableQuizzes);
-  console.log(Context);
   if (!availableQuizzes || availableQuizzes.length === 0) {
     return <div>Loading....</div>;
   }

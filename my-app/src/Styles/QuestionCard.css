@@ -1,9 +1,10 @@
 .answers{
     display: flex;
     flex-flow: wrap;
-    flex-direction: row;
+    flex-direction: column;
     padding: 10px;
     margin: 10px;
+    gap: 10px;
 };
 
 .answer-button {

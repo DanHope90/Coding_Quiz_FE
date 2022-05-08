@@ -95,7 +95,7 @@ function Register() {
             placeholder="Confirm password"
             onChange={handleUserChange}
           />
-          <button type="submit" className="button">Submit</button>
+          <button type="submit" className="register-button">Submit</button>
         </form>
       </div>
     </>
