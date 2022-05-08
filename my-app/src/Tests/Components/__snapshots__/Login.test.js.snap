@@ -40,11 +40,9 @@ exports[`renders the Login component correctly 1`] = `
           type="password"
           value=""
         />
-        <div
-          className="register-button"
-        >
+        <div>
           <button
-            className="button"
+            className="register-button"
             type="submit"
           >
             Login

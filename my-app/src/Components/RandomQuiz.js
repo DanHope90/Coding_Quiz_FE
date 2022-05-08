@@ -16,7 +16,10 @@ function RandomQuiz() {
   const randomQuiz = availableQuizzes[Math.floor(Math.random() * availableQuizzes.length)];
 
   return (
-    <div className="execute-quiz"><ExecuteQuiz desiredQuiz={randomQuiz} /></div>
+    <>
+      <div className="execute-quiz"><ExecuteQuiz desiredQuiz={randomQuiz} /></div>
+      <div><a href="/"><button type="submit">Take me home!</button></a></div>
+    </>
   );
 }
 

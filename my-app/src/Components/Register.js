@@ -52,9 +52,9 @@ function Register() {
 
   return (
     <>
-      <div className="titles">
-        <h1>Register</h1>
-        <h2>Please create an account</h2>
+      <div>
+        <h1 className="titles">Register</h1>
+        <h2 className="titles">Please create an account</h2>
       </div>
       <div>
         <form className="form" onSubmit={addUser}>

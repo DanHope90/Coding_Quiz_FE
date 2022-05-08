@@ -2,13 +2,15 @@
 
 exports[`renders the Register component correctly 1`] = `
 Array [
-  <div
-    className="titles"
-  >
-    <h1>
+  <div>
+    <h1
+      className="titles"
+    >
       Register
     </h1>
-    <h2>
+    <h2
+      className="titles"
+    >
       Please create an account
     </h2>
   </div>,

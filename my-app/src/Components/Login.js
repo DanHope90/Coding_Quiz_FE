@@ -86,10 +86,10 @@ function Login() {
                   onChange={loginHandleChange}
                   required
                 />
-                <div className="register-button">
+                <div>
                   <button
                     type="submit"
-                    className="button"
+                    className="register-button"
                   >
                     Login
                   </button>

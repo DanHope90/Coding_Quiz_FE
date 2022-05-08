@@ -2,21 +2,6 @@
   font-family: 'Press Start 2P', cursive;
 }
 
-/* button {
-  color:white;
-  background-color: black;
-}
-
-button:hover {
-  color: black;
-  background-color: white;
-}
-
-button:active {
-  background-color: black;
-  color: green;
-} */
-
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
