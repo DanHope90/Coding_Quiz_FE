@@ -26,7 +26,7 @@ function NavBar() {
           <Link className="navbar-links-link" to="/saved-quizzes">Saved Quizzes <FaSave /></Link>
         </li>
         <li className="navbar-links-item">
-          <Link className="navbar-links-link" to="/test-quiz">Test Quiz on JavaScript <BiTestTube /></Link>
+          <Link className="navbar-links-link" to="/random-quiz">Random Quiz <BiTestTube /></Link>
         </li>
       </ul>
     </div>

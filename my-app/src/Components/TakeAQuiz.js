@@ -1,7 +1,5 @@
 /* eslint-disable no-underscore-dangle */
-/* eslint-disable no-console */
 import React, { useContext, useState } from "react";
-import PropTypes from "prop-types";
 import TakeAQuizCard from "./TakeAQuizCard";
 import "../Styles/TakeAQuiz.css";
 import Context from "../Utils/Context";
@@ -47,7 +45,7 @@ function TakeAQuiz() {
         The select another quiz button will reset the desiredQuiz to be falsy */}
         {(desiredQuiz && (
           <>
-            <div><ExecuteQuiz desiredQuiz={desiredQuiz} /></div>
+            <div className="execute-quiz"><ExecuteQuiz desiredQuiz={desiredQuiz} /></div>
             <button type="submit" className="leave-quiz-button" onClick={() => setDesiredQuiz()}>I want to select another quiz!</button>
           </>
         ))}
@@ -58,7 +56,7 @@ function TakeAQuiz() {
 
 export default TakeAQuiz;
 
-TakeAQuiz.propTypes = {
-  quizName: PropTypes.string,
-  quizURL: PropTypes.string,
-}.isRequired;
+// TakeAQuiz.propTypes = {
+//   quizName: PropTypes.string,
+//   quizURL: PropTypes.string,
+// }.isRequired;

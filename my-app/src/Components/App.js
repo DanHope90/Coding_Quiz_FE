@@ -10,7 +10,7 @@ import TakeAQuiz from "./TakeAQuiz";
 import SavedQuizzes from "./SavedQuizzes";
 import Register from "./Register";
 import Login from "./Login";
-import TestQuiz from "./TestQuiz";
+import RandomQuiz from "./RandomQuiz";
 import Context from "../Utils/Context";
 
 function App() {
@@ -42,9 +42,9 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/take-a-quiz" element={<TakeAQuiz alert={alert} />} />
               <Route path="/saved-quizzes" element={<SavedQuizzes />} />
+              <Route path="/random-quiz" element={<RandomQuiz />} />
               <Route path="/register" element={<Register />} />
               <Route path="/login" element={<Login />} />
-              <Route path="/test-quiz" element={<TestQuiz />} />
             </Routes>
           </Layout>
         </Router>
