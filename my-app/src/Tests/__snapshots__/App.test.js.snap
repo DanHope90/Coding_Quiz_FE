@@ -114,10 +114,10 @@ exports[`renders the app correctly 1`] = `
         >
           <a
             className="navbar-links-link"
-            href="/test-quiz"
+            href="/random-quiz"
             onClick={[Function]}
           >
-            Test Quiz on JavaScript 
+            Random Quiz 
             <svg
               fill="currentColor"
               height="1em"

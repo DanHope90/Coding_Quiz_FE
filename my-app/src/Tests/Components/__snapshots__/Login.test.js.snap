@@ -41,7 +41,7 @@ exports[`renders the Login component correctly 1`] = `
           value=""
         />
         <div
-          className="userLogin"
+          className="register-button"
         >
           <button
             className="button"
