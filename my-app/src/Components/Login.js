@@ -20,8 +20,6 @@ function Login() {
 
   const [alert, setAlert] = useState(alertState.alert);
 
-  const [success, setSuccess] = useState(false);
-
   const handleSubmit = async (event) => {
     console.log({ ...loginData });
     event.preventDefault();
@@ -34,7 +32,7 @@ function Login() {
           isSuccess: true,
         });
       })
-      .catch((err) => {
+      .catch(() => {
         setAlert({
           message: "Login failed.",
           isSuccess: false,
