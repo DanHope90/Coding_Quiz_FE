@@ -1,9 +1,10 @@
 .answers{
     display: flex;
     flex-flow: wrap;
-    flex-direction: row;
     padding: 10px;
     margin: 10px;
+    gap: 10px;
+    align-items: center;
 };
 
 .answer-button {
@@ -13,4 +14,5 @@
 
 .answer-button:active {
     color:red;
+    background-color: white;
 }

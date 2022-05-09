@@ -3,14 +3,15 @@ import { Link } from "react-router-dom";
 import "../Styles/NavBar.css";
 import { FaHome, FaSave, FaRocket } from "react-icons/fa";
 import { BiTestTube } from "react-icons/bi";
-import questionmark from "../Images/question-mark.jpg";
+import { BsQuestionSquareFill } from "react-icons/bs";
+import { MdLeaderboard } from "react-icons/md";
 
 function NavBar() {
   return (
     <div className="navbar">
       <ul className="navbar-links">
         <li className="q-mark-pic">
-          <img src={questionmark} alt="question mark" />
+          <BsQuestionSquareFill />
         </li>
         <li className="navbar-links-item">
           <Link className="navbar-links-link" to="/">
@@ -26,7 +27,10 @@ function NavBar() {
           <Link className="navbar-links-link" to="/saved-quizzes">Saved Quizzes <FaSave /></Link>
         </li>
         <li className="navbar-links-item">
-          <Link className="navbar-links-link" to="/test-quiz">Test Quiz on JavaScript <BiTestTube /></Link>
+          <Link className="navbar-links-link" to="/random-quiz">Random Quiz <BiTestTube /></Link>
+        </li>
+        <li className="navbar-links-item">
+          <Link className="navbar-links-link" to="/leaderboard">Leaderboard <MdLeaderboard /></Link>
         </li>
       </ul>
     </div>

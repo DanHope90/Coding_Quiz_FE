@@ -1,16 +1,17 @@
 .sidebar {
     background-color: grey;
     display: grid;
+    border-right: 2px solid black;
 }
 
 .sidebar-links {
     margin: 0;
     padding: 0;
-    padding-bottom: 3px;
 }
 
 .sidebar-links-item {
     list-style-type: none;
+    padding: 15px 0px 15px 0px;
 }
 
 .sidebar-links-link {

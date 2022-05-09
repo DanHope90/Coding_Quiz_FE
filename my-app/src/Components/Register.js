@@ -52,9 +52,9 @@ function Register() {
 
   return (
     <>
-      <div className="titles">
-        <h1>Register</h1>
-        <h2>Please create an account</h2>
+      <div>
+        <h1 className="titles">Register</h1>
+        <h2 className="titles">Please create an account</h2>
       </div>
       <div>
         <form className="form" onSubmit={addUser}>
@@ -95,7 +95,7 @@ function Register() {
             placeholder="Confirm password"
             onChange={handleUserChange}
           />
-          <button type="submit" className="button">Submit</button>
+          <button type="submit" className="register-button">Submit</button>
         </form>
       </div>
     </>

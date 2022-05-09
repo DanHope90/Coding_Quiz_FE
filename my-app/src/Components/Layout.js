@@ -7,7 +7,7 @@ function Layout({ children }) {
   return (
     <div className="upper-class">
       <div className="sidebar"><SideBar /></div>
-      <div>{children}</div>
+      <div className="body">{children}</div>
     </div>
   );
 }

@@ -1,7 +1,5 @@
 /* eslint-disable no-underscore-dangle */
-/* eslint-disable no-console */
 import React, { useContext, useState } from "react";
-import PropTypes from "prop-types";
 import TakeAQuizCard from "./TakeAQuizCard";
 import "../Styles/TakeAQuiz.css";
 import Context from "../Utils/Context";
@@ -12,8 +10,6 @@ function TakeAQuiz() {
 
   // Below presents a "Loading..." if the database isn't yet
   // accessed. It should only display for a second or two.
-  console.log(availableQuizzes);
-  console.log(Context);
   if (!availableQuizzes || availableQuizzes.length === 0) {
     return <div>Loading....</div>;
   }
@@ -22,12 +18,11 @@ function TakeAQuiz() {
 
   return (
     <div className="take-a-quiz-body">
-      <div>This is the Take A Quiz Page</div>
       {/* If a quiz hasn't been selected, the cards will be rendered, but
       the cards will not be rendered after one has been clicked. */}
       {(!desiredQuiz && (
         <>
-          <div>You havent yet selected a quiz.</div>
+          <div>Select one of the following quizzes to get started!</div>
           <div className="take-quiz-array">
             {availableQuizzes.map((quiz) => (
               <div key={quiz._id} className="take-indiv-quiz">
@@ -49,8 +44,12 @@ function TakeAQuiz() {
         The select another quiz button will reset the desiredQuiz to be falsy */}
         {(desiredQuiz && (
           <>
-            <div><ExecuteQuiz desiredQuiz={desiredQuiz} /></div>
-            <button type="submit" className="leave-quiz-button" onClick={() => setDesiredQuiz()}>I want to select another quiz!</button>
+            <div className="execute-quiz">
+              <ExecuteQuiz desiredQuiz={desiredQuiz} />
+            </div>
+            <button type="submit" className="leave-quiz-button" onClick={() => setDesiredQuiz()}>
+              I want to select another quiz!
+            </button>
           </>
         ))}
       </div>
@@ -60,7 +59,7 @@ function TakeAQuiz() {
 
 export default TakeAQuiz;
 
-TakeAQuiz.propTypes = {
-  quizName: PropTypes.string,
-  quizURL: PropTypes.string,
-}.isRequired;
+// TakeAQuiz.propTypes = {
+//   quizName: PropTypes.string,
+//   quizURL: PropTypes.string,
+// }.isRequired;

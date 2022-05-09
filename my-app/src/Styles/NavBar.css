@@ -1,20 +1,18 @@
 .navbar {
     background-color: grey;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    border-bottom: 2px solid black;
 }
 
 .navbar-links {
     margin: 0;
     padding: 0;
-    padding-bottom: 3px;
     display: flex;
-    justify-content: flex-start;
+    align-items: flex-end;
 }
 
 .navbar-links-item {
     list-style-type: none;
+    display: block;
 }
 
 .navbar-links-link {
@@ -31,8 +29,10 @@
 }
 
 .q-mark-pic {
-    width: 150px;
-    height: 150px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 55px;
 }
 
 img {

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import axios from "axios";
 import Alert from "./Alert";
@@ -59,8 +60,8 @@ function Login() {
         : (
           <div>
             <Alert message={alert.message} isSuccess={alert.isSuccess} />
-            <h1>Login</h1>
-            <h2>Please submit your username and password</h2>
+            <h1 className="titles">Login</h1>
+            <h2 className="titles">Please submit your username and password</h2>
             <div>
               <form className="form" onSubmit={handleSubmit}>
                 <input
@@ -83,10 +84,10 @@ function Login() {
                   onChange={loginHandleChange}
                   required
                 />
-                <div className="userLogin">
+                <div>
                   <button
                     type="submit"
-                    className="button"
+                    className="register-button"
                   >
                     Login
                   </button>

@@ -2,7 +2,6 @@
     display:flex;
     justify-content: center;
     flex-direction: column;
-    padding-left: 40px;
 }
 
 .form {
@@ -11,10 +10,18 @@
     flex-direction: column;
     gap: 20px;
     padding-left: 40px;
-    width: 500px;
 }
 
-.button {
+.form-control {
+    width: 400px;
+}
+
+.register-button {
     height: 20px;
     width: 200px;
+    color: white;
+}
+
+.register-button.hover {
+    color: red;
 }

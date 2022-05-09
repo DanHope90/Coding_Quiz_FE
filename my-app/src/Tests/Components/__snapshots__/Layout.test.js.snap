@@ -74,6 +74,8 @@ exports[`renders the layout component correctly 1`] = `
       </ul>
     </div>
   </div>
-  <div />
+  <div
+    className="body"
+  />
 </div>
 `;
