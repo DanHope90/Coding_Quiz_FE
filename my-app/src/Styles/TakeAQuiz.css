@@ -12,6 +12,8 @@
 
 .leave-quiz-button{
     color: red;
+    width: 90%;
+    height: 50px;
 }
 
 .leave-quiz-button:hover{

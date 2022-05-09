@@ -11,6 +11,7 @@ import SavedQuizzes from "./SavedQuizzes";
 import Register from "./Register";
 import Login from "./Login";
 import RandomQuiz from "./RandomQuiz";
+import Leaderboard from "./Leaderboard";
 import Context from "../Utils/Context";
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
               <Route path="/take-a-quiz" element={<TakeAQuiz alert={alert} />} />
               <Route path="/saved-quizzes" element={<SavedQuizzes />} />
               <Route path="/random-quiz" element={<RandomQuiz />} />
+              <Route path="/leaderboard" element={<Leaderboard />} />
               <Route path="/register" element={<Register />} />
               <Route path="/login" element={<Login />} />
             </Routes>

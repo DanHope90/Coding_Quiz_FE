@@ -18,12 +18,11 @@ function TakeAQuiz() {
 
   return (
     <div className="take-a-quiz-body">
-      <div>This is the Take A Quiz Page</div>
       {/* If a quiz hasn't been selected, the cards will be rendered, but
       the cards will not be rendered after one has been clicked. */}
       {(!desiredQuiz && (
         <>
-          <div>You havent yet selected a quiz.</div>
+          <div>Select one of the following quizzes to get started!</div>
           <div className="take-quiz-array">
             {availableQuizzes.map((quiz) => (
               <div key={quiz._id} className="take-indiv-quiz">

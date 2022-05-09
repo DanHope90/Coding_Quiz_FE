@@ -3,10 +3,17 @@ button {
     border-radius: 12px;
     color: white;
     background-color: black;
+    width: 400px;
+    height: 75px;
 }
 
 button:hover{
     color:black;
+    background-color: white;
+}
+
+button:active {
+    color: red;
     background-color: white;
 }
 

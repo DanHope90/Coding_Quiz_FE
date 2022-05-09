@@ -1,7 +1,7 @@
 .sidebar {
     background-color: grey;
     display: grid;
-    padding-right: 10px;
+    border-right: 2px solid black;
 }
 
 .sidebar-links {

@@ -1,5 +1,6 @@
 .navbar {
     background-color: grey;
+    border-bottom: 2px solid black;
 }
 
 .navbar-links {
@@ -28,9 +29,10 @@
 }
 
 .q-mark-pic {
-    width: 100px;
-    height: 100px;
-    padding-right: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 55px;
 }
 
 img {

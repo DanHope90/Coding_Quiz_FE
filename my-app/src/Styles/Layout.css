@@ -1,8 +1,8 @@
 .upper-class {
     display: flex;
     flex-direction: row;
-    height: 100vh;
-    align-items: stretch;
+    height: 100pc;
+    /* align-items: stretch; */
     background-color: rgba(65, 162, 41, 0.657);
 }
 
