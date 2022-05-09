@@ -6,10 +6,9 @@
 
 .form {
     display: flex;
-    justify-content: center;
+    align-items: center;
     flex-direction: column;
     gap: 20px;
-    padding-left: 40px;
 }
 
 .form-control {
@@ -24,4 +23,14 @@
 
 .register-button.hover {
     color: red;
+}
+
+@media only screen and (max-width: 600px) {
+    .titles{
+
+    }
+    .form-control {
+        width: 200px;
+        font-size: 8px;
+    }
 }

@@ -1,3 +1,9 @@
+.execute-quiz {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
 .take-quiz-array{
     display: flex;
     flex-flow: wrap;

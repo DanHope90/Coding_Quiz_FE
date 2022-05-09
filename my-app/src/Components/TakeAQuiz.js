@@ -43,14 +43,12 @@ function TakeAQuiz() {
         to a truthy; to do that, the user must select a quiz.
         The select another quiz button will reset the desiredQuiz to be falsy */}
         {(desiredQuiz && (
-          <>
-            <div className="execute-quiz">
-              <ExecuteQuiz desiredQuiz={desiredQuiz} />
-            </div>
+          <div className="execute-quiz">
+            <ExecuteQuiz desiredQuiz={desiredQuiz} />
             <button type="submit" className="leave-quiz-button" onClick={() => setDesiredQuiz()}>
               I want to select another quiz!
             </button>
-          </>
+          </div>
         ))}
       </div>
     </div>

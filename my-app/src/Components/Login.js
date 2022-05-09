@@ -22,6 +22,7 @@ function Login() {
   const [alert, setAlert] = useState(alertState.alert);
 
   const handleSubmit = async (event) => {
+    // eslint-disable-next-line no-console
     console.log({ ...loginData });
     event.preventDefault();
     setAlert({ message: "", isSuccess: false });

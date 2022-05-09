@@ -26,3 +26,18 @@
 .sidebar-links-link:active{
     color: white;
 }
+
+@media only screen and (max-width: 600px) {
+    .sidebar {
+        font-size: 8px;
+        border-right: none;
+        border-bottom: 2px solid black;
+    }
+    .sidebar-links{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .sidebar-links-item{
+        padding: 0;
+    }
+}

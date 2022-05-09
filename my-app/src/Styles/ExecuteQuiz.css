@@ -35,3 +35,22 @@ h2 {
     font-size: 16px;
 }
 
+@media only screen and (max-width: 600px) {
+    button {
+        width: 200px;
+        height: 37.5px;
+        font-size: 8px;
+    }
+    h1 {
+        font-size: 12px;
+    }
+    h2 {
+        font-size: 9px;
+    }
+    .question-count {
+        font-size: 8px;
+    }
+    .question-card {
+        font-size: 8px;
+    }
+}

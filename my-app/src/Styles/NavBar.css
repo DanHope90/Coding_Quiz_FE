@@ -7,7 +7,7 @@
     margin: 0;
     padding: 0;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .navbar-links-item {
@@ -38,4 +38,14 @@
 img {
     width: inherit;
     height: inherit;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar{
+        font-size: 8px;
+        border-bottom: none;
+    }
+    .q-mark-pic{
+        font-size: 25px;
+    }
 }
