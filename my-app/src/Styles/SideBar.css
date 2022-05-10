@@ -1,5 +1,5 @@
 .sidebar {
-    background-color: grey;
+    background-color: rgb(186, 185, 185);
     display: grid;
     border-right: 2px solid black;
 }

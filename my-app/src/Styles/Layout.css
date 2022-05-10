@@ -1,13 +1,15 @@
 .upper-class {
     display: flex;
     flex-direction: row;
-    height: 100pc;
-    background-color: rgba(65, 162, 41, 0.657);
+    height: 55pc;
+    background-image: url("../Images/markus-winkler-Xr1Lwph6eGI-unsplash.jpg");
 }
 
 .body {
     padding: 50px 50px 0px 50px;
 }
+
+
 
 @media only screen and (max-width: 600px) {
     .upper-class {
