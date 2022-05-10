@@ -52,7 +52,7 @@ function Register() {
 
   return (
     <>
-      <div>
+      <div className="form-body">
         <h1 className="titles">Register</h1>
         <h2 className="titles">Please create an account</h2>
       </div>

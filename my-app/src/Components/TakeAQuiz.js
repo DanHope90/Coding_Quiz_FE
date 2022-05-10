@@ -56,8 +56,3 @@ function TakeAQuiz() {
 }
 
 export default TakeAQuiz;
-
-// TakeAQuiz.propTypes = {
-//   quizName: PropTypes.string,
-//   quizURL: PropTypes.string,
-// }.isRequired;

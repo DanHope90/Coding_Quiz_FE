@@ -5,16 +5,20 @@ exports[`renders the Login component correctly 1`] = `
   className="titles"
 >
   <div>
-    <h1
-      className="titles"
+    <div
+      className="form-body"
     >
-      Login
-    </h1>
-    <h2
-      className="titles"
-    >
-      Please submit your username and password
-    </h2>
+      <h1
+        className="titles"
+      >
+        Login
+      </h1>
+      <h2
+        className="titles"
+      >
+        Please submit your username and password
+      </h2>
+    </div>
     <div>
       <form
         className="form"

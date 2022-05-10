@@ -4,6 +4,10 @@
     flex-direction: column;
 }
 
+.form-body {
+    background-color: red;
+}
+
 .form {
     display: flex;
     align-items: center;

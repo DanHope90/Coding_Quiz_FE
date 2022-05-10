@@ -61,8 +61,10 @@ function Login() {
         : (
           <div>
             <Alert message={alert.message} isSuccess={alert.isSuccess} />
-            <h1 className="titles">Login</h1>
-            <h2 className="titles">Please submit your username and password</h2>
+            <div className="form-body">
+              <h1 className="titles">Login</h1>
+              <h2 className="titles">Please submit your username and password</h2>
+            </div>
             <div>
               <form className="form" onSubmit={handleSubmit}>
                 <input

@@ -17,6 +17,16 @@ function TakeAQuizCard({
 export default TakeAQuizCard;
 
 TakeAQuizCard.propTypes = {
-  quizName: PropTypes.string,
-  quizURL: PropTypes.string,
+  setDesiredQuiz: PropTypes.objectOf,
+  wholeQuiz: PropTypes.shape({
+    quizName: PropTypes.string,
+    description: PropTypes.string,
+    questions: PropTypes.arrayOf({
+      question: PropTypes.string,
+      correct_answer: PropTypes.string,
+      answers: PropTypes.arrayOf({
+        answer: PropTypes.string,
+      }),
+    }),
+  }),
 }.isRequired;

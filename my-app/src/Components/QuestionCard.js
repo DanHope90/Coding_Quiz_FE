@@ -50,8 +50,10 @@ export default QuestionCard;
 
 QuestionCard.propTypes = {
   question: PropTypes.string,
-  setScore: PropTypes.func,
+  chosenAnswer: PropTypes.string,
+  setChosenAnswer: PropTypes.string,
+  setScore: PropTypes.number,
   score: PropTypes.number,
   qNumber: PropTypes.number,
-  setQNumber: PropTypes.func,
+  setQNumber: PropTypes.number,
 }.isRequired;

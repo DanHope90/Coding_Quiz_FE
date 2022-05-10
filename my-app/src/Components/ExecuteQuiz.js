@@ -48,5 +48,15 @@ function ExecuteQuiz(props) {
 export default ExecuteQuiz;
 
 ExecuteQuiz.propTypes = {
-  desiredQuiz: PropTypes.func,
+  desiredQuiz: PropTypes.shape({
+    quizName: PropTypes.string,
+    description: PropTypes.string,
+    questions: PropTypes.arrayOf({
+      question: PropTypes.string,
+      correct_answer: PropTypes.string,
+      answers: PropTypes.arrayOf({
+        answer: PropTypes.string,
+      }),
+    }),
+  }),
 }.isRequired;
