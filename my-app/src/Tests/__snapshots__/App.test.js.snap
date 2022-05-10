@@ -264,8 +264,60 @@ exports[`renders the app correctly 1`] = `
     <div
       className="body"
     >
-      <div>
-        This is my home page!
+      <div
+        className="titles"
+      >
+        <div>
+          <div
+            className="form-body"
+          >
+            <h1
+              className="titles"
+            >
+              Login
+            </h1>
+            <h2
+              className="titles"
+            >
+              Please submit your username and password
+            </h2>
+          </div>
+          <div>
+            <form
+              className="form"
+              onSubmit={[Function]}
+            >
+              <input
+                className="form-control"
+                id="email"
+                name="email"
+                onChange={[Function]}
+                placeholder="Enter email address"
+                required={true}
+                type="email"
+                value=""
+              />
+              <input
+                className="form-control"
+                id="password"
+                name="password"
+                onChange={[Function]}
+                placeholder="Enter password"
+                required={true}
+                type="password"
+                value=""
+              />
+              <div>
+                <button
+                  className="register-button"
+                  type="submit"
+                >
+                  Login
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
   </div>

@@ -49,11 +49,17 @@ function QuestionCard(props) {
 export default QuestionCard;
 
 QuestionCard.propTypes = {
-  question: PropTypes.string,
+  question: PropTypes.shape({
+    question: PropTypes.string,
+    correct_answer: PropTypes.string,
+    answers: PropTypes.arrayOf(
+      { a: PropTypes.string, answer: PropTypes.string },
+    ),
+  }),
   chosenAnswer: PropTypes.string,
-  setChosenAnswer: PropTypes.string,
-  setScore: PropTypes.number,
+  setChosenAnswer: PropTypes.func,
+  setScore: PropTypes.func,
   score: PropTypes.number,
   qNumber: PropTypes.number,
-  setQNumber: PropTypes.number,
+  setQNumber: PropTypes.func,
 }.isRequired;

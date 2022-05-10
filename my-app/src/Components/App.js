@@ -3,7 +3,6 @@ import "../Styles/App.css";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
-import { Navigate } from "react-router";
 import NavBar from "./NavBar";
 import Layout from "./Layout";
 import Home from "./Home";

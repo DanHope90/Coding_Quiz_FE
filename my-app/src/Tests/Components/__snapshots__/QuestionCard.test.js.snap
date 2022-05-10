@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the Question Card component correctly 1`] = `
+<div>
+  <div>
+    What is the symbol for multiplication?
+  </div>
+  <div
+    className="answers"
+  >
+    <div>
+      <button
+        className="answer-button"
+        onClick={[Function]}
+        type="submit"
+      >
+        *
+      </button>
+    </div>
+    <div>
+      <button
+        className="answer-button"
+        onClick={[Function]}
+        type="submit"
+      >
+        /
+      </button>
+    </div>
+    <div>
+      <button
+        className="answer-button"
+        onClick={[Function]}
+        type="submit"
+      >
+        -
+      </button>
+    </div>
+    <div>
+      <button
+        className="answer-button"
+        onClick={[Function]}
+        type="submit"
+      >
+        +
+      </button>
+    </div>
+  </div>
+</div>
+`;

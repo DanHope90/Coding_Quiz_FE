@@ -11,7 +11,7 @@ function SideBar() {
           <Link className="sidebar-links-link" to="/register">Register <FaRegIdCard /></Link>
         </li>
         <li className="sidebar-links-item">
-          <Link className="sidebar-links-link" to="/login">Login <FaDoorOpen /></Link>
+          <Link className="sidebar-links-link" to="/">Login <FaDoorOpen /></Link>
         </li>
       </ul>
     </div>

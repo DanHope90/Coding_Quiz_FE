@@ -4,11 +4,19 @@ import QuestionCard from "../../Components/QuestionCard";
 
 test("renders the Question Card component correctly", () => {
   const dummyQuestion = {
-    question: "What is the symbol for multiplcation?",
-    answers: [{ a: "*" }, { b: "/" }, { c: "-" }, { d: "+" }],
     correct_answer: "*",
+    answers: [{ a: "*" }, { b: "/" }, { c: "-" }, { d: "+" }],
+    question: "What is the symbol for multiplication?",
   };
 
-  const testRenderer = renderer.create(<QuestionCard value={dummyQuestion} />);
+  const testRenderer = renderer.create(<QuestionCard
+    score={0}
+    setScore={jest.fn()}
+    qNumber={1}
+    setQNumber={jest.fn()}
+    chosenAnswer="*"
+    setChosenAnswer={jest.fn()}
+    question={dummyQuestion}
+  />);
   expect(testRenderer).toMatchSnapshot();
 });
