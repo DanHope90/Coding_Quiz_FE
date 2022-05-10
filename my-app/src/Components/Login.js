@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useNavigate } from 'react-router-dom';
 import axios from "axios";
 import Alert from "./Alert";
 import "../Styles/Register.css";
@@ -20,19 +21,21 @@ function Login() {
   };
 
   const [alert, setAlert] = useState(alertState.alert);
+  const [loggedIn, setLoggedIn] = useState(false)
 
   const handleSubmit = async (event) => {
     // eslint-disable-next-line no-console
-    console.log({ ...loginData });
+    // console.log({ ...loginData });
     event.preventDefault();
     setAlert({ message: "", isSuccess: false });
     axios
       .post(`http://localhost:4000/api/user/login`, { ...loginData })
-      .then(() => {
+      .then((res) => {
         setAlert({
           message: "You have successfully logged in!",
           isSuccess: true,
         });
+        console.log(res.data);
       })
       .catch(() => {
         setAlert({
@@ -49,14 +52,18 @@ function Login() {
     }));
   }
 
+  const navigate = useNavigate();
+  function handleClick() {
+    if (alert.isSuccess) {
+      navigate('/');
+    }
+  }
+
   return (
     <div className="titles">
-      {alert.isSuccess && alert.message
+      {loggedIn
         ? (
-          <Alert
-            message={alert.message}
-            isSuccess={alert.isSuccess}
-          />
+          { handleClick }
         )
         : (
           <div>
@@ -91,6 +98,7 @@ function Login() {
                   <button
                     type="submit"
                     className="register-button"
+                    onClick={handleClick}
                   >
                     Login
                   </button>

@@ -3,6 +3,7 @@ import "../Styles/App.css";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
+import { Navigate } from "react-router";
 import NavBar from "./NavBar";
 import Layout from "./Layout";
 import Home from "./Home";
@@ -26,6 +27,8 @@ function App() {
   // to populate said array with all quizzes.
   const [availableQuizzes, setAvailableQuizzes] = useState([]);
 
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
   useEffect(() => {
     axios
       .get("http://localhost:4000/api/quizzes")
@@ -34,7 +37,7 @@ function App() {
   }, []);
 
   return (
-    <Context.Provider value={{ availableQuizzes }}>
+    <Context.Provider value={{ availableQuizzes, isLoggedIn, setIsLoggedIn }}>
       <div className="app">
         <Router>
           <div className="navbar"><NavBar /></div>
