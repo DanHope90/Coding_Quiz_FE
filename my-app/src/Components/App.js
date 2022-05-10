@@ -43,13 +43,12 @@ function App() {
           <div className="navbar"><NavBar /></div>
           <Layout>
             <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path="/" element={isLoggedIn ? <Home /> : <Login />} />
               <Route path="/take-a-quiz" element={<TakeAQuiz alert={alert} />} />
               <Route path="/saved-quizzes" element={<SavedQuizzes />} />
               <Route path="/random-quiz" element={<RandomQuiz />} />
               <Route path="/leaderboard" element={<Leaderboard />} />
               <Route path="/register" element={<Register />} />
-              <Route path="/login" element={<Login />} />
             </Routes>
           </Layout>
         </Router>

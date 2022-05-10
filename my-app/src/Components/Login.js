@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
-import React, { useEffect, useState } from "react";
-import { useNavigate } from 'react-router-dom';
+import React, { useState, useContext } from "react";
 import axios from "axios";
+import Context from "../Utils/Context";
 import Alert from "./Alert";
 import "../Styles/Register.css";
 
@@ -20,21 +20,18 @@ function Login() {
     },
   };
 
+  const { setIsLoggedIn } = useContext(Context);
+
   const [alert, setAlert] = useState(alertState.alert);
-  const [loggedIn, setLoggedIn] = useState(false)
 
   const handleSubmit = async (event) => {
     // eslint-disable-next-line no-console
-    // console.log({ ...loginData });
     event.preventDefault();
     setAlert({ message: "", isSuccess: false });
     axios
       .post(`http://localhost:4000/api/user/login`, { ...loginData })
       .then((res) => {
-        setAlert({
-          message: "You have successfully logged in!",
-          isSuccess: true,
-        });
+        setIsLoggedIn(true);
         console.log(res.data);
       })
       .catch(() => {
@@ -52,61 +49,47 @@ function Login() {
     }));
   }
 
-  const navigate = useNavigate();
-  function handleClick() {
-    if (alert.isSuccess) {
-      navigate('/');
-    }
-  }
-
   return (
     <div className="titles">
-      {loggedIn
-        ? (
-          { handleClick }
-        )
-        : (
-          <div>
-            <Alert message={alert.message} isSuccess={alert.isSuccess} />
-            <div className="form-body">
-              <h1 className="titles">Login</h1>
-              <h2 className="titles">Please submit your username and password</h2>
-            </div>
+      <div>
+        <Alert message={alert.message} isSuccess={alert.isSuccess} />
+        <div className="form-body">
+          <h1 className="titles">Login</h1>
+          <h2 className="titles">Please submit your username and password</h2>
+        </div>
+        <div>
+          <form className="form" onSubmit={handleSubmit}>
+            <input
+              type="email"
+              className="form-control"
+              id="email"
+              name="email"
+              value={email}
+              placeholder="Enter email address"
+              onChange={loginHandleChange}
+              required
+            />
+            <input
+              type="password"
+              className="form-control"
+              id="password"
+              name="password"
+              value={password}
+              placeholder="Enter password"
+              onChange={loginHandleChange}
+              required
+            />
             <div>
-              <form className="form" onSubmit={handleSubmit}>
-                <input
-                  type="email"
-                  className="form-control"
-                  id="email"
-                  name="email"
-                  value={email}
-                  placeholder="Enter email address"
-                  onChange={loginHandleChange}
-                  required
-                />
-                <input
-                  type="password"
-                  className="form-control"
-                  id="password"
-                  name="password"
-                  value={password}
-                  placeholder="Enter password"
-                  onChange={loginHandleChange}
-                  required
-                />
-                <div>
-                  <button
-                    type="submit"
-                    className="register-button"
-                    onClick={handleClick}
-                  >
-                    Login
-                  </button>
-                </div>
-              </form>
+              <button
+                type="submit"
+                className="register-button"
+              >
+                Login
+              </button>
             </div>
-          </div>
-        )}
+          </form>
+        </div>
+      </div>
     </div>
 
   );
