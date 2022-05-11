@@ -14,11 +14,7 @@ function NavBar() {
           <BsQuestionSquareFill />
         </li>
         <li className="navbar-links-item">
-          <Link className="navbar-links-link" to="/">
-            Home
-            {' '}
-            <FaHome />
-          </Link>
+          <Link className="navbar-links-link" to="/">Home <FaHome /></Link>
         </li>
         <li className="navbar-links-item">
           <Link className="navbar-links-link" to="/take-a-quiz">Take Quiz <FaRocket /></Link>

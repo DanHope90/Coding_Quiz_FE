@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import "../Styles/SideBar.css";
 import { FaRegIdCard, FaDoorOpen } from "react-icons/fa";
+import { BsDoorClosed } from "react-icons/bs";
+import Context from "../Utils/Context";
 
 function SideBar() {
+  const { isLoggedIn, setIsLoggedIn } = useContext(Context);
+
   return (
     <div className="sidebar">
+      {(!isLoggedIn && (
       <ul className="sidebar-links">
         <li className="sidebar-links-item">
           <Link className="sidebar-links-link" to="/register">Register <FaRegIdCard /></Link>
@@ -14,6 +19,14 @@ function SideBar() {
           <Link className="sidebar-links-link" to="/">Login <FaDoorOpen /></Link>
         </li>
       </ul>
+      ))}
+      {(isLoggedIn && (
+      <ul className="sidebar-links">
+        <li className="sidebar-links-item">
+          <button type="button" className="logout-button" onClick={() => setIsLoggedIn(false)}>Logout <BsDoorClosed /></button>
+        </li>
+      </ul>
+      ))}
     </div>
   );
 }

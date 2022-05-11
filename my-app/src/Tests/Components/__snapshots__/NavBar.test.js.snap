@@ -37,8 +37,7 @@ exports[`renders the NavBar correctly 1`] = `
         href="/"
         onClick={[Function]}
       >
-        Home
-         
+        Home 
         <svg
           fill="currentColor"
           height="1em"
