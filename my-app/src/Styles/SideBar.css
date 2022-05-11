@@ -29,7 +29,7 @@
 
 @media only screen and (max-width: 600px) {
     .sidebar {
-        font-size: 8px;
+        font-size: 12px;
         border-right: none;
         border-bottom: 2px solid black;
     }

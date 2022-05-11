@@ -32,8 +32,8 @@ function QuestionCard(props) {
   checkAnswer(chosenAnswer);
 
   return (
-    <div>
-      <div>
+    <div className="question-body">
+      <div className="question-text">
         {question.question}
       </div>
       <div className="answers">

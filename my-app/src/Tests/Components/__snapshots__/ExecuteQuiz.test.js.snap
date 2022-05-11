@@ -1,8 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders the ExecuteQuiz component correctly 1`] = `
-<div>
-  <div>
+<div
+  className="quiz-body"
+>
+  <div
+    className="final-score"
+  >
     You have scored 
     0
      out of 

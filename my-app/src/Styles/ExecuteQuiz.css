@@ -17,6 +17,13 @@ button:active {
     background-color: white;
 }
 
+.quiz-body {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
 h1 {
     font-size: 24px;
 }
@@ -29,28 +36,44 @@ h2 {
     font-size: 16px;
     margin: 10px;
     color: blue;
+    font-weight: bold;
+
 }
 
 .question-card {
     font-size: 16px;
 }
 
+.final-score {
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+.leave-random-quiz {
+    display: grid;
+    justify-items: center;
+    color: red;
+}
+
 @media only screen and (max-width: 600px) {
     button {
-        width: 200px;
+        width: 250px;
         height: 37.5px;
         font-size: 8px;
     }
     h1 {
-        font-size: 12px;
+        font-size: 20px;
     }
     h2 {
-        font-size: 9px;
+        font-size: 15px;
     }
     .question-count {
-        font-size: 8px;
+        font-size: 12px;
     }
     .question-card {
         font-size: 8px;
+    }
+    .final-score {
+        font-size: 12px;
     }
 }

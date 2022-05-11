@@ -22,7 +22,7 @@ function TakeAQuiz() {
       the cards will not be rendered after one has been clicked. */}
       {(!desiredQuiz && (
         <>
-          <div>Select one of the following quizzes to get started!</div>
+          <div className="select-a-quiz-text">Select one of the following quizzes to get started!</div>
           <div className="take-quiz-array">
             {availableQuizzes.map((quiz) => (
               <div key={quiz._id} className="take-indiv-quiz">

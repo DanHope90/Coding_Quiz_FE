@@ -21,7 +21,7 @@ function NavBar() {
           </Link>
         </li>
         <li className="navbar-links-item">
-          <Link className="navbar-links-link" to="/take-a-quiz">Take A Quiz <FaRocket /></Link>
+          <Link className="navbar-links-link" to="/take-a-quiz">Take Quiz <FaRocket /></Link>
         </li>
         <li className="navbar-links-item">
           <Link className="navbar-links-link" to="/saved-quizzes">Saved Quizzes <FaSave /></Link>

@@ -1,8 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders the Question Card component correctly 1`] = `
-<div>
-  <div>
+<div
+  className="question-body"
+>
+  <div
+    className="question-text"
+  >
     What is the symbol for multiplication?
   </div>
   <div

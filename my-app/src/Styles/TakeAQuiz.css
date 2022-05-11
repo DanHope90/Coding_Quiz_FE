@@ -1,7 +1,12 @@
+.select-a-quiz-text {
+    font-size: inherit;
+}
+
 .execute-quiz {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    gap: 20px;
 }
 
 .take-quiz-array{
@@ -30,4 +35,11 @@
 .leave-quiz-button:active{
     background-color: white;
     color: red;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .select-a-quiz-text {
+        font-size: 12px;
+    }
 }

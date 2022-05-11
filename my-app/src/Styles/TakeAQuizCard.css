@@ -18,3 +18,12 @@
     background-color: red;
     color: white;
 }
+
+@media only screen and (max-width: 600px) {
+    .button-quiz {
+        font-size: 12px;
+        padding: 5px;
+        margin: 5px;
+        width: 200px;
+    }
+}

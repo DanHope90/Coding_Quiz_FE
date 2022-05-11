@@ -4,15 +4,12 @@
     flex-direction: column;
 }
 
-.form-body {
-    background-color: red;
-}
-
 .form {
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 20px;
+    padding-top: 20px;
 }
 
 .form-control {
@@ -30,9 +27,6 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .titles{
-
-    }
     .form-control {
         width: 200px;
         font-size: 8px;

@@ -41,7 +41,7 @@ exports[`renders the SideBar correctly 1`] = `
     >
       <a
         className="sidebar-links-link"
-        href="/login"
+        href="/"
         onClick={[Function]}
       >
         Login 

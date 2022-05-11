@@ -73,7 +73,7 @@ exports[`renders the app correctly 1`] = `
             href="/take-a-quiz"
             onClick={[Function]}
           >
-            Take A Quiz 
+            Take Quiz 
             <svg
               fill="currentColor"
               height="1em"
@@ -234,7 +234,7 @@ exports[`renders the app correctly 1`] = `
           >
             <a
               className="sidebar-links-link"
-              href="/login"
+              href="/"
               onClick={[Function]}
             >
               Login 

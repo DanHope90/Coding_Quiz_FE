@@ -67,7 +67,7 @@ exports[`renders the NavBar correctly 1`] = `
         href="/take-a-quiz"
         onClick={[Function]}
       >
-        Take A Quiz 
+        Take Quiz 
         <svg
           fill="currentColor"
           height="1em"

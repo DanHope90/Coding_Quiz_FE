@@ -32,7 +32,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    font-size: 55px;
+    font-size: 70px;
 }
 
 img {
@@ -42,10 +42,13 @@ img {
 
 @media only screen and (max-width: 600px) {
     .navbar{
-        font-size: 8px;
+        height: 50px;
+        font-size: 10px;
         border-bottom: none;
     }
     .q-mark-pic{
-        font-size: 25px;
+        /* On a smaller device, the question mark icon does not render
+        Necessary to save space on mobile phones */
+        font-size: 0px;
     }
 }

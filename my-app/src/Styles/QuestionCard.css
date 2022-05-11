@@ -1,3 +1,15 @@
+.question-body {
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.question-text {
+    padding: 10px;
+    font-size: 16px;
+}
+
 .answers{
     display: flex;
     flex-flow: wrap;
@@ -16,4 +28,10 @@
 .answer-button:active {
     color:red;
     background-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .question-text{
+        font-size: 12px;
+    }
 }

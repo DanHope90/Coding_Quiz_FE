@@ -12,7 +12,7 @@ function ExecuteQuiz(props) {
   const [chosenAnswer, setChosenAnswer] = useState("");
 
   return (
-    <div>
+    <div className="quiz-body">
       {(((qNumber + 1) <= desiredQuiz.questions.length) && (
         <>
           <h1>{desiredQuiz.quizName}</h1>
@@ -37,7 +37,7 @@ function ExecuteQuiz(props) {
 
         </>
       )) || (
-        <div>
+        <div className="final-score">
           You have scored {score} out of {desiredQuiz.questions.length}!
         </div>
       )}
