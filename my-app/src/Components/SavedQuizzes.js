@@ -1,28 +1,41 @@
-import React from "react";
-import PropTypes from "prop-types";
+/* eslint-disable no-underscore-dangle */
+import React, { useContext, useState, useEffect } from "react";
+// import PropTypes from "prop-types";
+import axios from "axios";
+import Context from "../Utils/Context";
 import SavedQuizCard from "./SavedQuizCard";
-import data from "../Data/SavedQuizzes.json";
 import "../Styles/SavedQuizzes.css";
 
 function SavedQuizzes() {
-  const { quizzes } = data;
+  const { userInfo, isLoggedIn } = useContext(Context);
+  const [completedQuizzes, setCompletedQuizzes] = useState();
+
+  useEffect(() => {
+    axios.get(`http://localhost:4000/api/user/${userInfo.id}`)
+      .then(({ data }) => setCompletedQuizzes(data.savedQuizzes))
+      .catch((err) => console.log(err));
+  }, []);
+
+  console.log(completedQuizzes);
+
   return (
     <>
       <div className="saved-quiz-body">This is the Saved Quizzes Page</div>
-      <div className="saved-quizzes">
-        {quizzes.map((quiz) => (
-          <div key={quiz.quizName} className="indiv-quiz">
-            <SavedQuizCard quizName={quiz.quizName} quizScore={quiz.quizScore} />
+      {/* <div className="saved-quizzes">
+        {completedQuizzes.map((quiz) => (
+          <div key={quiz._id} className="indiv-quiz">
+            This is a quiz.
+            <SavedQuizCard quizId={quiz._id} quizScore={quiz.score} />
           </div>
         ))}
-      </div>
+      </div> */}
     </>
   );
 }
 
 export default SavedQuizzes;
 
-SavedQuizzes.propTypes = {
-  quizName: PropTypes.string,
-  quizScore: PropTypes.number,
-}.isRequired;
+// SavedQuizzes.propTypes = {
+//   quizName: PropTypes.string,
+//   quizScore: PropTypes.number,
+// }.isRequired;

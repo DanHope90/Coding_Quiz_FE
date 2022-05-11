@@ -273,12 +273,22 @@ exports[`renders the app correctly 1`] = `
             <h1
               className="titles"
             >
-              Login
+              Welcome!
             </h1>
             <h2
               className="titles"
             >
-              Please submit your username and password
+              Use the bar above to take a quiz.
+            </h2>
+            <h2
+              className="titles"
+            >
+              If you login, you can save/view your scores.
+            </h2>
+            <h2
+              className="titles"
+            >
+              To login, submit your email and password below.
             </h2>
           </div>
           <div>

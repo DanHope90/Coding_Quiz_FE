@@ -27,6 +27,9 @@ function App() {
   // to populate said array with all quizzes.
   const [availableQuizzes, setAvailableQuizzes] = useState([]);
 
+  // Deployed backend
+  // https://dev-quiz-22.herokuapp.com/
+
   useEffect(() => {
     axios
       .get("http://localhost:4000/api/quizzes")
@@ -38,12 +41,11 @@ function App() {
     id: "",
     userName: "",
     email: "",
+    completedQuizzes: [],
   };
 
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [userInfo, setUserInfo] = useState(defaultUserInfo);
-
-  console.log(userInfo);
 
   return (
     <Context.Provider value={{
@@ -53,6 +55,7 @@ function App() {
       defaultUserInfo,
       userInfo,
       setUserInfo,
+      setAlert,
     }}
     >
       <div className="app">

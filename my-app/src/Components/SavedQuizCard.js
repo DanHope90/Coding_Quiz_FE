@@ -1,14 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-function SavedQuizCard({ quizName, quizScore }) {
+function SavedQuizCard({ quizId, quizScore }) {
   return (
     <>
-      <div>{quizName}</div>
+      <div>{quizId.quizName}</div>
       <div>
-        {quizScore}
-        {' '}
-        / 10
+        {quizScore} / {quizId.questions.length}
       </div>
     </>
   );
@@ -17,6 +15,6 @@ function SavedQuizCard({ quizName, quizScore }) {
 export default SavedQuizCard;
 
 SavedQuizCard.propTypes = {
-  quizName: PropTypes.string,
+  quizId: PropTypes.string,
   quizScore: PropTypes.number,
 }.isRequired;

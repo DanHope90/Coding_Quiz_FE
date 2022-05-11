@@ -25,19 +25,17 @@ function Login() {
   const [alert, setAlert] = useState(alertState.alert);
 
   const handleSubmit = async (event) => {
-    // eslint-disable-next-line no-console
     event.preventDefault();
-    // console.log(loginData);
     setAlert({ message: "", isSuccess: false });
     axios
       .post(`http://localhost:4000/api/user/login`, { ...loginData })
       .then((res) => {
         setIsLoggedIn(true);
-        // console.log(res.data);
         setUserInfo({
           id: res.data._id,
           userName: res.data.userName,
           email: res.data.email,
+          completedQuizzes: res.data.savedQuizzes,
         });
       })
       .catch(() => {
@@ -60,8 +58,10 @@ function Login() {
       <div>
         <Alert message={alert.message} isSuccess={alert.isSuccess} />
         <div className="form-body">
-          <h1 className="titles">Login</h1>
-          <h2 className="titles">Please submit your username and password</h2>
+          <h1 className="titles">Welcome!</h1>
+          <h2 className="titles">Use the bar above to take a quiz.</h2>
+          <h2 className="titles">If you login, you can save/view your scores.</h2>
+          <h2 className="titles">To login, submit your email and password below.</h2>
         </div>
         <div>
           <form className="form" onSubmit={handleSubmit}>
