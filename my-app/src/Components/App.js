@@ -50,6 +50,7 @@ function App() {
       availableQuizzes,
       isLoggedIn,
       setIsLoggedIn,
+      defaultUserInfo,
       userInfo,
       setUserInfo,
     }}

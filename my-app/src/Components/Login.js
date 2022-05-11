@@ -1,5 +1,4 @@
 /* eslint-disable no-underscore-dangle */
-/* eslint-disable no-unused-vars */
 import React, { useState, useContext } from "react";
 import axios from "axios";
 import Context from "../Utils/Context";
