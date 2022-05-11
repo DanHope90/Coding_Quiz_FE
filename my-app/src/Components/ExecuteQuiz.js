@@ -1,7 +1,12 @@
-import React, { useState } from "react";
+/* eslint-disable max-len */
+/* eslint-disable no-underscore-dangle */
+/* eslint-disable object-shorthand */
+import React, { useState, useContext } from "react";
 import PropTypes from "prop-types";
+import axios from "axios";
 import QuestionCard from "./QuestionCard";
 import "../Styles/ExecuteQuiz.css";
+import Context from "../Utils/Context";
 
 function ExecuteQuiz(props) {
   const { desiredQuiz } = props;
@@ -10,6 +15,20 @@ function ExecuteQuiz(props) {
   const [qNumber, setQNumber] = useState(0);
 
   const [chosenAnswer, setChosenAnswer] = useState("");
+
+  const { isLoggedIn, userInfo } = useContext(Context);
+
+  function handleSavedQuiz(quizId) {
+    console.log(quizId);
+    axios.post("http://localhost:4000/api/user/savedquizzes", {
+      quizId: quizId,
+      userId: userInfo.id,
+      score: score,
+    })
+      .then(() => {
+        console.log(quizId, userInfo.id, score);
+      });
+  }
 
   return (
     <div className="quiz-body">
@@ -37,9 +56,16 @@ function ExecuteQuiz(props) {
 
         </>
       )) || (
-        <div className="final-score">
-          You have scored {score} out of {desiredQuiz.questions.length}!
-        </div>
+        <>
+          <div className="final-score">
+            You have scored {score} out of {desiredQuiz.questions.length}!
+          </div>
+          <div>
+            {(isLoggedIn && (
+            <button type="submit" onClick={() => handleSavedQuiz(desiredQuiz._id, score)}>Save my score!</button>
+            ))}
+          </div>
+        </>
       )}
     </div>
   );

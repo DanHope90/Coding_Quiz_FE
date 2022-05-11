@@ -17,7 +17,7 @@ function RandomQuiz() {
   return (
     <>
       <div className="execute-quiz"><ExecuteQuiz desiredQuiz={randomQuiz} /></div>
-      <div className="leave-random-quiz"><a href="/"><button type="submit">Take me home!</button></a></div>
+      <div className="leave-random-quiz"><a href="/random-quiz"><button type="submit">Take me home!</button></a></div>
     </>
   );
 }

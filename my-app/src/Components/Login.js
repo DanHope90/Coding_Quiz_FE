@@ -1,3 +1,4 @@
+/* eslint-disable no-underscore-dangle */
 /* eslint-disable no-unused-vars */
 import React, { useState, useContext } from "react";
 import axios from "axios";
@@ -20,19 +21,25 @@ function Login() {
     },
   };
 
-  const { setIsLoggedIn } = useContext(Context);
+  const { setIsLoggedIn, setUserInfo } = useContext(Context);
 
   const [alert, setAlert] = useState(alertState.alert);
 
   const handleSubmit = async (event) => {
     // eslint-disable-next-line no-console
     event.preventDefault();
+    // console.log(loginData);
     setAlert({ message: "", isSuccess: false });
     axios
       .post(`http://localhost:4000/api/user/login`, { ...loginData })
       .then((res) => {
         setIsLoggedIn(true);
-        console.log(res.data);
+        // console.log(res.data);
+        setUserInfo({
+          id: res.data._id,
+          userName: res.data.userName,
+          email: res.data.email,
+        });
       })
       .catch(() => {
         setAlert({

@@ -1,3 +1,4 @@
+/* eslint-disable no-underscore-dangle */
 /* eslint-disable react/jsx-no-constructed-context-values */
 import "../Styles/App.css";
 import React, { useState, useEffect } from "react";
@@ -26,8 +27,6 @@ function App() {
   // to populate said array with all quizzes.
   const [availableQuizzes, setAvailableQuizzes] = useState([]);
 
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-
   useEffect(() => {
     axios
       .get("http://localhost:4000/api/quizzes")
@@ -35,8 +34,26 @@ function App() {
       .catch(() => setAlert({ message: "Axios promise rejected", isSuccess: false }));
   }, []);
 
+  const defaultUserInfo = {
+    id: "",
+    userName: "",
+    email: "",
+  };
+
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [userInfo, setUserInfo] = useState(defaultUserInfo);
+
+  console.log(userInfo);
+
   return (
-    <Context.Provider value={{ availableQuizzes, isLoggedIn, setIsLoggedIn }}>
+    <Context.Provider value={{
+      availableQuizzes,
+      isLoggedIn,
+      setIsLoggedIn,
+      userInfo,
+      setUserInfo,
+    }}
+    >
       <div className="app">
         <Router>
           <div className="navbar"><NavBar /></div>
