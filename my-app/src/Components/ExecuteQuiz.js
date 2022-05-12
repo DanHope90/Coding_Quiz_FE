@@ -1,5 +1,7 @@
-/* eslint-disable object-shorthand */
+/* eslint-disable no-console */
+/* eslint-disable max-len */
 /* eslint-disable no-underscore-dangle */
+/* eslint-disable object-shorthand */
 import React, { useState, useContext } from "react";
 import PropTypes from "prop-types";
 import axios from "axios";
@@ -17,14 +19,15 @@ function ExecuteQuiz(props) {
 
   const { isLoggedIn, userInfo } = useContext(Context);
 
-  function handleSavedQuiz(quizId) {
-    axios.post("https://dev-quiz-22.herokuapp.com/api/user/savedquizzes", {
-      quizId: quizId,
-      userId: userInfo.id,
+  function handleSavedQuiz(quiz) {
+    console.log(quiz);
+    axios.post("http://localhost:4000/api/user/savedquizzes", {
+      quiz: quiz,
+      // userId: userInfo.id,
       score: score,
     })
       .then(() => {
-        console.log(quizId, userInfo.id, score);
+        console.log(quiz, userInfo.id, score);
       });
   }
 
@@ -60,7 +63,7 @@ function ExecuteQuiz(props) {
           </div>
           <div>
             {(isLoggedIn && (
-            <button type="submit" onClick={() => handleSavedQuiz(desiredQuiz._id, score)}>Save my score!</button>
+            <button type="submit" onClick={() => handleSavedQuiz(desiredQuiz, score)}>Save my score!</button>
             ))}
           </div>
         </>
