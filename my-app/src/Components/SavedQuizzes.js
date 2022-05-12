@@ -8,7 +8,6 @@ import "../Styles/SavedQuizzes.css";
 
 function SavedQuizzes() {
   const { userInfo, isLoggedIn } = useContext(Context);
-  const [completedQuizzes, setCompletedQuizzes] = useState();
 
   useEffect(() => {
     axios.get(`http://localhost:4000/api/user/${userInfo.id}`)
@@ -16,7 +15,10 @@ function SavedQuizzes() {
       .catch((err) => console.log(err));
   }, []);
 
+  const [completedQuizzes, setCompletedQuizzes] = useState();
   console.log(completedQuizzes);
+
+  // const { _id, score } = completedQuizzes;
 
   return (
     <>

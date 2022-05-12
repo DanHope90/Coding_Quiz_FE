@@ -40,7 +40,7 @@ img {
     height: inherit;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
     .navbar{
         height: 50px;
         font-size: 10px;

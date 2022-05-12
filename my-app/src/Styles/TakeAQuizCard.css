@@ -19,7 +19,7 @@
     color: white;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
     .button-quiz {
         font-size: 12px;
         padding: 5px;

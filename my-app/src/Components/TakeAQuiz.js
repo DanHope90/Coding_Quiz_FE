@@ -15,7 +15,6 @@ function TakeAQuiz() {
   }
 
   const [desiredQuiz, setDesiredQuiz] = useState();
-  console.log(desiredQuiz);
 
   return (
     <div className="take-a-quiz-body">

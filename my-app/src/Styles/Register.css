@@ -26,7 +26,7 @@
     color: red;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
     .form-control {
         width: 200px;
         font-size: 8px;
