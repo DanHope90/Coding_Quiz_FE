@@ -24,6 +24,10 @@ You can also run `npm test` to run the tests.
 
 With extra time, we were going to work on a leaderboard. The leaderboard would have allowed the user to view the other users' scores on a particular quiz. The user will not necessarily have to have been logged in to do this.
 
+A few bugs emerged when trying to render saved quizzes, so sorting those out would've been something to try.
+
+Authentication via Facebook and "dark mode" media queries on the CSS styling may also be further things to look into with extra time.
+
 ## Dependencies/Links
 
 React: https://reactjs.org/
