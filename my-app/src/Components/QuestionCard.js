@@ -1,5 +1,4 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
-/* eslint-disable no-console */
 import React from "react";
 import PropTypes from "prop-types";
 import "../Styles/QuestionCard.css";
