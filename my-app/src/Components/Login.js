@@ -28,7 +28,7 @@ function Login() {
     event.preventDefault();
     setAlert({ message: "", isSuccess: false });
     axios
-      .post(`http://localhost:4000/api/user/login`, { ...loginData })
+      .post(`https://dev-quiz-22.herokuapp.com/api/user/login`, { ...loginData })
       .then((res) => {
         setIsLoggedIn(true);
         setUserInfo({

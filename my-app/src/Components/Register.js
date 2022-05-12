@@ -28,7 +28,7 @@ function Register() {
     event.preventDefault();
     setAlert({ message: "", isSuccess: false });
     axios
-      .post(`http://localhost:4000/api/user`, { ...formData })
+      .post(`https://dev-quiz-22.herokuapp.com/api/user`, { ...formData })
       .then(() => {
         setAlert({
           message: "User has now been added!",

@@ -27,12 +27,9 @@ function App() {
   // to populate said array with all quizzes.
   const [availableQuizzes, setAvailableQuizzes] = useState([]);
 
-  // Deployed backend
-  // https://dev-quiz-22.herokuapp.com/
-
   useEffect(() => {
     axios
-      .get("http://localhost:4000/api/quizzes")
+      .get("https://dev-quiz-22.herokuapp.com/api/quizzes")
       .then(({ data }) => setAvailableQuizzes(data))
       .catch(() => setAlert({ message: "Axios promise rejected", isSuccess: false }));
   }, []);
