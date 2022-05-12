@@ -13,5 +13,6 @@ exports[`renders the ExecuteQuiz component correctly 1`] = `
     0
     !
   </div>
+  <div />
 </div>
 `;

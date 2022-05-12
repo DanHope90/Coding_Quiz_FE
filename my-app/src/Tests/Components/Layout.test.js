@@ -11,6 +11,6 @@ test("renders the layout component correctly", () => {
         <Layout />
       </BrowserRouter>
     </Context.Provider>,
-  );  
+  );
   expect(testRenderer).toMatchSnapshot();
 });
