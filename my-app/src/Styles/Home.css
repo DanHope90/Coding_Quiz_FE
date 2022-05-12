@@ -1,0 +1,11 @@
+.home-text {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    font-size: 20px;
+}
+
+.user-name {
+    font-size: 22px;
+}
+
